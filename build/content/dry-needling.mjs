@@ -29,7 +29,7 @@ export default register({
   },
 
   blocks: [
-    { t: 'hero', img: 'assets/equipment.jpg', alt: 'Treatment equipment at the clinic',
+    { t: 'hero', img: 'assets/dry-needling-close.jpg', alt: 'Physiotherapist performing dry needling on a patient&rsquo;s upper back',
       trust: ['Qualified physiotherapists', 'Single-use sterile needles', 'Always part of a full plan'] },
     { t: 'crumbs' },
     { t: 'toc', items: [
@@ -77,8 +77,8 @@ export default register({
       ] },
     },
 
-    { t: 'split', id: 'session', tone: 'fresh', img: 'assets/gym.jpg',
-      alt: 'Physiotherapist working with a patient in the clinic gym',
+    { t: 'split', id: 'session', tone: 'fresh', img: 'assets/dry-needling.jpg',
+      alt: 'Physiotherapist placing a dry needling needle, wearing gloves',
       eyebrow: 'What to expect',
       h2: 'What a dry needling session is actually like',
       html: `

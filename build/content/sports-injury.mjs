@@ -32,7 +32,7 @@ export default register({
   },
 
   blocks: [
-    { t: 'hero', img: 'assets/gym.jpg', alt: 'Physiotherapist supervising loaded rehabilitation exercise',
+    { t: 'hero', img: 'assets/shoulder-exercise.jpg', alt: 'Physiotherapist supervising a shoulder strengthening exercise with a dumbbell',
       trust: ['One-on-one every session', 'Objective return-to-sport testing', 'Rehab built around your sport'] },
     { t: 'crumbs' },
     { t: 'toc', items: [
@@ -80,8 +80,8 @@ export default register({
       ],
     },
 
-    { t: 'split', id: 'local', tone: 'fresh', flip: true, img: 'assets/equipment.jpg',
-      alt: 'Training and rehabilitation equipment',
+    { t: 'split', id: 'local', tone: 'fresh', flip: true, img: 'assets/ankle-taping.jpg',
+      alt: 'Physiotherapist strapping an athlete&rsquo;s ankle',
       eyebrow: 'A local angle',
       h2: 'Rehab that respects the Illawarra sporting calendar',
       html: `

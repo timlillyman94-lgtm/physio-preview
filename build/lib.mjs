@@ -95,7 +95,7 @@ function header(p) {
     `<li><a href="${url(slug)}"${active === slug ? ' class="on"' : ''}>${label}</a></li>`).join('');
   return `
 <header class="nav"><div class="wrap">
-  <a class="brand" href="index.html"><img src="assets/logo.jpg" alt="Functional Physiotherapy logo"><span class="nm">Functional Physiotherapy<small>Dapto NSW</small></span></a>
+  <a class="brand" href="index.html"><img src="assets/logo.png" alt="Functional Physiotherapy logo"><span class="nm">Functional Physiotherapy<small>Dapto NSW</small></span></a>
   <nav aria-label="Primary"><ul class="navlinks">${links}</ul></nav>
   <a class="navtel" href="${site.phoneHref}">${site.phone}</a>
   ${bookBtn('Book now')}
@@ -118,7 +118,9 @@ function footer() {
 
   return `
 <footer class="foot"><div class="wrap">
-  <div class="fbrand"><div class="nm">Functional Physiotherapy Dapto</div>
+  <div class="fbrand">
+    <img class="wm light" src="assets/wordmark-black.png" alt="Functional Physiotherapy" width="620" height="177">
+    <img class="wm dark" src="assets/wordmark-white.png" alt="Functional Physiotherapy" width="620" height="177">
     <p>Evidence-based physiotherapy for Dapto and the Illawarra. Injury rehab, WorkCover, NDIS, dry needling and more.</p>
     <p class="fnap">${site.street}<br>${site.locality} ${site.region} ${site.postcode}<br>
     Inside ${site.building}<br>
@@ -448,8 +450,11 @@ R.partners = (b) => section(b.tone || 'alt', `${sh(b, true)}<div class="partners
   b.items.map((n) => `<div class="plogo"><span>${n}</span></div>`).join('')
 }</div>${b.note ? `<p class="tnote mid">${b.note}</p>` : ''}`);
 
+/* img:null renders an explicit empty slot — an unrelated photo in a person card
+   would read as a real practitioner, which is exactly what a placeholder must not do. */
 R.bios = (b) => section(b.tone || '', `${b.h2 ? sh(b) : ''}<div class="team-grid">${
-  b.items.map((m) => `<div class="member"><div class="ph"><img src="${m.img}" alt="${attr(m.alt || '')}"></div>
+  b.items.map((m) => `<div class="member"><div class="ph${m.img ? '' : ' empty'}">${
+    m.img ? `<img src="${m.img}" alt="${attr(m.alt || '')}">` : '<span>Photo to come</span>'}</div>
     <div class="b"><h3>${m.name}</h3><div class="role">${m.role}</div>${m.bio ? `<p class="mbio">${m.bio}</p>` : ''}</div></div>`).join('')
 }</div>${b.note ? `<p class="tnote">${b.note}</p>` : ''}`);
 

@@ -33,7 +33,7 @@ export default register({
   },
 
   blocks: [
-    { t: 'hero', img: 'assets/equipment.jpg', alt: 'Running shoes and training equipment',
+    { t: 'hero', img: 'assets/calf-treatment.jpg', alt: 'Physiotherapist treating a runner&rsquo;s calf',
       trust: ['We keep you running where we can', 'Load-based, not rest-based', 'Staged return-to-run plans'] },
     { t: 'crumbs' },
     { t: 'toc', items: [
@@ -92,8 +92,8 @@ export default register({
       ],
     },
 
-    { t: 'split', id: 'local', tone: 'fresh', flip: true, img: 'assets/gym.jpg',
-      alt: 'Strength training in the clinic gym',
+    { t: 'split', id: 'local', tone: 'fresh', flip: true, img: 'assets/foot-taping.jpg',
+      alt: 'Physiotherapist taping a runner&rsquo;s foot',
       eyebrow: 'A local angle',
       h2: 'Running in the Illawarra: what it does to your legs',
       html: `

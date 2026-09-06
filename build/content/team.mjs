@@ -22,7 +22,7 @@ export default register({
     id: 'chris-vitucci',
     name: 'Chris Vitucci',
     jobTitle: 'Director & Principal Physiotherapist',
-    image: 'assets/team-1.jpg',
+    image: 'assets/chris-square.jpg',
     alumniOf: ['University of Wollongong', 'University of Technology Sydney'],
     knowsAbout: [
       'Dry needling', 'Chronic pain management', 'Running injuries',
@@ -37,7 +37,7 @@ export default register({
     { t: 'phero' },
     { t: 'crumbs' },
 
-    { t: 'split', img: 'assets/team-1.jpg', alt: 'Chris Vitucci, Director and Principal Physiotherapist',
+    { t: 'split', img: 'assets/chris-portrait.jpg', alt: 'Chris Vitucci, Director and Principal Physiotherapist',
       eyebrow: 'Director &amp; Principal Physiotherapist',
       h2: 'Chris Vitucci',
       html: `
@@ -79,18 +79,18 @@ export default register({
     { t: 'bios', eyebrow: 'The wider team', h2: 'Growing the team',
       sub: 'As physiotherapists join, each gets their own profile here. People search for their physio by name, so named profiles matter for both trust and search.',
       items: [
-        { name: '[Physiotherapist name]', role: 'Physiotherapist', img: 'assets/equipment.jpg', alt: '',
+        { name: '[Physiotherapist name]', role: 'Physiotherapist', img: null,
           bio: '[Placeholder card showing how a second practitioner appears — photo, name, qualifications, a short bio and their special interests.]' },
-        { name: '[Physiotherapist name]', role: 'Physiotherapist', img: 'assets/equipment.jpg', alt: '',
+        { name: '[Physiotherapist name]', role: 'Physiotherapist', img: null,
           bio: '[Placeholder card. The grid reflows cleanly from one practitioner to nine or more, so this page scales as the clinic grows.]' },
-        { name: 'Join us', role: 'We are hiring', img: 'assets/gym.jpg', alt: '',
+        { name: 'Join us', role: 'We are hiring', img: 'assets/desk-notes.jpg', alt: 'Physiotherapist writing up notes at the clinic desk',
           bio: 'We would like to hear from physiotherapists who want a one-on-one caseload and real appointment lengths. <a href="careers.html">See what we are looking for &rarr;</a>' },
       ],
-      note: '<b>Placeholder.</b> Two cards above are scaffolding for future practitioners. Also: confirm the headshot on Chris&rsquo;s profile is actually him &mdash; ' +
-        'it is a real team photo carried over from the current site, but the name-to-face match has not been verified. ' +
-        'Note the polo in that photo reads &ldquo;Functional Physiotherapy Griffith&rdquo; (tracker P0-10).' },
+      note: '<b>Placeholder.</b> Two cards above are scaffolding for future practitioners &mdash; they render as empty slots rather than showing an unrelated photo. ' +
+        'Chris&rsquo;s portrait is from the professional shoot he supplied, cropped above the chest so the &ldquo;Griffith&rdquo; uniform badge is out of frame; ' +
+        'please still confirm the person shown is Chris (tracker P0-15).' },
 
-    { t: 'split', tone: 'fresh', flip: true, img: 'assets/clinic.jpg', alt: 'Inside Functional Physiotherapy Dapto',
+    { t: 'split', tone: 'fresh', flip: true, img: 'assets/clinic-room.jpg', alt: 'A treatment room at Functional Physiotherapy Dapto',
       eyebrow: 'Our approach',
       h2: 'What one-on-one actually means here',
       html: `
@@ -110,7 +110,7 @@ export default register({
       { n: 'Mon–Fri', l: '8:00am – 5:30pm' },
     ] },
 
-    { t: 'split', tone: 'alt', img: 'assets/equipment.jpg', alt: 'Clinic equipment',
+    { t: 'split', tone: 'alt', img: 'assets/desk-notes.jpg', alt: 'Physiotherapist writing up notes at the clinic desk',
       eyebrow: 'Join us',
       h2: 'We are looking for physiotherapists',
       html: `

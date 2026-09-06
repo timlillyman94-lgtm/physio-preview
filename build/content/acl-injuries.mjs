@@ -33,7 +33,7 @@ export default register({
   },
 
   blocks: [
-    { t: 'hero', img: 'assets/gym.jpg', alt: 'Physiotherapist supervising loaded knee rehabilitation',
+    { t: 'hero', img: 'assets/knee-treatment.jpg', alt: 'Physiotherapist assessing a patient&rsquo;s knee and hamstring',
       trust: ['Prehab through to return to sport', 'Criteria-based, not calendar-based', 'Local &mdash; no Sydney commute'] },
     { t: 'crumbs' },
     { t: 'toc', items: [
@@ -82,8 +82,8 @@ export default register({
       ],
     },
 
-    { t: 'split', id: 'prevention', tone: 'fresh', flip: true, img: 'assets/equipment.jpg',
-      alt: 'Training equipment',
+    { t: 'split', id: 'prevention', tone: 'fresh', flip: true, img: 'assets/band-glute.jpg',
+      alt: 'Resistance band strengthening for hip and knee control',
       eyebrow: 'Prevention',
       h2: 'ACL injury prevention for Illawarra clubs and players',
       html: `

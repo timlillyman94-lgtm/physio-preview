@@ -33,7 +33,7 @@ export default register({
   },
 
   blocks: [
-    { t: 'hero', img: 'assets/gym.jpg', alt: 'Physiotherapist assessing a patient in the clinic',
+    { t: 'hero', img: 'assets/neck-supine.jpg', alt: 'Physiotherapist assessing a patient lying on a treatment table',
       trust: ['Vestibular assessment', 'BPPV often resolves in 1&ndash;2 sessions', 'A special interest of <a href="team.html" style="color:inherit;text-decoration:underline">our principal physio</a>'] },
     { t: 'crumbs' },
     { t: 'toc', items: [
@@ -71,8 +71,8 @@ export default register({
 <p>Dizziness and unsteadiness matter most in what they stop you doing. People reduce their walking, stop driving at night, avoid uneven ground and stop going out alone &mdash; and that avoidance itself accelerates the decline in balance and strength, which raises the risk of a fall. We treat the balance problem and the deconditioning together, with strength work alongside the vestibular exercises, because in older adults the two are inseparable.</p>`,
     },
 
-    { t: 'split', id: 'headaches', tone: 'fresh', flip: true, img: 'assets/equipment.jpg',
-      alt: 'Clinic treatment equipment',
+    { t: 'split', id: 'headaches', tone: 'fresh', flip: true, img: 'assets/neck-supine-2.jpg',
+      alt: 'Physiotherapist treating a patient&rsquo;s neck at the head of the treatment table',
       eyebrow: 'Headaches',
       h2: 'Headaches that come from the neck',
       html: `

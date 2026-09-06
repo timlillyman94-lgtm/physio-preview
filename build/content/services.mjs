@@ -50,7 +50,7 @@ export default register({
         'Falls prevention', 'Post-surgical rehabilitation', 'Telehealth consultations', 'Home visits',
       ] },
 
-    { t: 'split', tone: 'fresh', img: 'assets/clinic.jpg', alt: 'Inside the Dapto clinic',
+    { t: 'split', tone: 'fresh', img: 'assets/clinic-room.jpg', alt: 'A treatment room at Functional Physiotherapy',
       eyebrow: 'How we work',
       h2: 'One-on-one, every session',
       html: `

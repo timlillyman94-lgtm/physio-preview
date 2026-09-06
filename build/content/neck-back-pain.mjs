@@ -32,7 +32,7 @@ export default register({
   },
 
   blocks: [
-    { t: 'hero', img: 'assets/gym.jpg', alt: 'Physiotherapist guiding a patient through a strengthening exercise',
+    { t: 'hero', img: 'assets/back-treatment.jpg', alt: 'Physiotherapist assessing a patient&rsquo;s lower back',
       trust: ['Assessment before imaging', 'Hands-on treatment', 'A plan you can keep doing'] },
     { t: 'crumbs' },
     { t: 'toc', items: [
@@ -69,8 +69,8 @@ export default register({
 <p>A small proportion of cases need medical or surgical input: progressive weakness in the leg, symptoms that are not improving over a reasonable period, or the red flag symptoms listed below. We monitor for those specifically, and we will refer you promptly rather than persisting with treatment that is not working.</p>`,
     },
 
-    { t: 'split', id: 'neck', tone: 'fresh', img: 'assets/equipment.jpg',
-      alt: 'Clinic equipment',
+    { t: 'split', id: 'neck', tone: 'fresh', img: 'assets/back-manual.jpg',
+      alt: 'Physiotherapist delivering manual therapy to a patient&rsquo;s upper back',
       eyebrow: 'Neck &amp; upper back',
       h2: 'Neck pain, desk work and the Illawarra commute',
       html: `

@@ -32,7 +32,7 @@ export default register({
   },
 
   blocks: [
-    { t: 'hero', img: 'assets/gym.jpg', alt: 'Physiotherapist guiding a patient through strengthening exercises',
+    { t: 'hero', img: 'assets/back-manual.jpg', alt: 'Physiotherapist treating a patient&rsquo;s lower back',
       trust: ['Choose your own physio', 'No upfront cost on approved claims', 'We liaise with your case manager'] },
     { t: 'crumbs' },
     { t: 'toc', items: [
@@ -84,8 +84,8 @@ export default register({
       ] },
     },
 
-    { t: 'split', id: 'local', tone: 'fresh', flip: true, img: 'assets/equipment.jpg',
-      alt: 'Rehabilitation equipment',
+    { t: 'split', id: 'local', tone: 'fresh', flip: true, img: 'assets/band-glute.jpg',
+      alt: 'Physiotherapist supervising resistance band strengthening for an injured worker',
       eyebrow: 'A local angle',
       h2: 'The work injuries we see around Dapto',
       html: `

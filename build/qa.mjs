@@ -1,4 +1,4 @@
-import { readFileSync, readdirSync, existsSync } from 'node:fs';
+import { readFileSync, readdirSync, existsSync, statSync } from 'node:fs';
 const files = readdirSync('.').filter(f => f.endsWith('.html'));
 let fail = 0;
 const say = (ok, msg) => { if (!ok) fail++; console.log((ok ? '  ok   ' : '  FAIL ') + msg); };
@@ -102,12 +102,32 @@ const napBad = files.filter(f => { const h = readFileSync(f,'utf8');
   return !h.includes('4221 9637') || !h.includes('Dapto NSW 2530'); });
 say(napBad.length === 0, `NAP (phone + address) on every page ${napBad.join(', ')}`);
 
-// 16. Griffith-branded photos out of hero slots
-const heroImgs = new Set();
-for (const f of files) for (const m of readFileSync(f,'utf8').matchAll(/class="hero-img"><img src="([^"]+)"/g)) heroImgs.add(m[1]);
-const griffith = ['assets/hero.jpg','assets/treatment-1.jpg','assets/treatment-2.jpg','assets/treatment-3.jpg','assets/treatment-4.jpg'];
-const bad16 = [...heroImgs].filter(i => griffith.includes(i));
-say(bad16.length === 0, `no Griffith-branded photo in a hero slot ${bad16.join(', ')}`);
+// 16. retired Griffith-legible photos must not come back
+const retired = ['hero.jpg','logo.jpg','clinic.jpg','gym.jpg','equipment.jpg','team-1.jpg',
+  'treatment-1.jpg','treatment-2.jpg','treatment-3.jpg','treatment-4.jpg'];
+const back = [];
+for (const f of files) for (const r of retired)
+  if (readFileSync(f, 'utf8').includes('assets/' + r)) back.push(f + ' -> ' + r);
+say(back.length === 0, `retired Griffith-branded photos stay retired ${back.join(', ')}`);
 
+// 17. every file in assets/ is actually referenced (no dead weight in the repo)
+const usedAssets = new Set();
+for (const f of files)
+  for (const m of readFileSync(f, 'utf8').matchAll(/assets\/([A-Za-z0-9._-]+)/g)) usedAssets.add(m[1]);
+const unused = readdirSync('assets').filter((a) => !usedAssets.has(a));
+say(unused.length === 0, `no unused files in assets/ ${unused.join(', ')}`);
+
+// 18. no oversized images — these ship to every visitor
+const heavy = readdirSync('assets')
+  .map((a) => [a, statSync('assets/' + a).size])
+  .filter(([, sz]) => sz > 400 * 1024);
+say(heavy.length === 0, `all assets under 400 KB ${heavy.map(([a, z]) => a + '(' + Math.round(z / 1024) + 'KB)').join(', ')}`);
+
+// 19. every content image carries alt text
+const noAlt = [];
+for (const f of files)
+  for (const m of readFileSync(f, 'utf8').matchAll(/<img [^>]*>/g))
+    if (!/\balt="/.test(m[0])) noAlt.push(f);
+say(noAlt.length === 0, `every <img> has an alt attribute ${[...new Set(noAlt)].join(', ')}`);
 console.log(fail ? `\n${fail} CHECK(S) FAILED` : '\nAll checks passed.');
 process.exit(fail ? 1 : 0);

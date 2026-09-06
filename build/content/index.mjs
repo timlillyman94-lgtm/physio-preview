@@ -16,7 +16,7 @@ export default register({
     '<b>Your health, our commitment.</b> Evidence-based, one-on-one physiotherapy in Dapto &mdash; helping people across the Illawarra recover from injury, manage pain and get moving again.',
 
   blocks: [
-    { t: 'hero', img: 'assets/gym.jpg', alt: 'Physiotherapist working with a patient at the Dapto clinic',
+    { t: 'hero', img: 'assets/hero-assessment.jpg', alt: 'Physiotherapist assessing a patient&rsquo;s shoulder movement at Functional Physiotherapy',
       trust: ['One-on-one, every session', 'Masters-qualified physiotherapist', 'HICAPS, WorkCover &amp; NDIS'] },
 
     { t: 'svcgrid', id: 'services', mid: true, eyebrow: 'What we treat',
@@ -25,7 +25,7 @@ export default register({
       items: ['sports-injury', 'neck-back-pain', 'dry-needling', 'workcover', 'ndis', 'vertigo-headaches'],
       all: true },
 
-    { t: 'split', tone: 'fresh', img: 'assets/clinic.jpg', alt: 'Inside the Dapto clinic',
+    { t: 'split', tone: 'fresh', img: 'assets/clinic-room.jpg', alt: 'A treatment room at Functional Physiotherapy',
       eyebrow: 'Our approach',
       h2: 'The Functional Physiotherapy approach',
       html: `
@@ -61,7 +61,7 @@ export default register({
     { t: 'suburbs', eyebrow: 'Where we work', h2: 'Serving Dapto and the Illawarra',
       sub: 'Based in Dapto, treating patients from across the region, with home visits available.' },
 
-    { t: 'split', tone: 'alt', flip: true, img: 'assets/equipment.jpg', alt: 'Clinic equipment',
+    { t: 'split', tone: 'alt', flip: true, img: 'assets/shoulder-exercise.jpg', alt: 'Physiotherapist supervising a shoulder strengthening exercise',
       eyebrow: 'Careers',
       h2: 'Physiotherapists: come and work with us',
       html: `

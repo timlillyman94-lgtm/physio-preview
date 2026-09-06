@@ -32,7 +32,7 @@ export default register({
   },
 
   blocks: [
-    { t: 'hero', img: 'assets/gym.jpg', alt: 'Physiotherapist supporting a client through an exercise',
+    { t: 'hero', img: 'assets/leg-raise.jpg', alt: 'Physiotherapist supporting a client through a leg movement',
       trust: ['Plan, self &amp; agency managed', 'Home visits across the Illawarra', 'Reports for your plan review'] },
     { t: 'crumbs' },
     { t: 'toc', items: [
@@ -80,8 +80,8 @@ export default register({
       ] },
     },
 
-    { t: 'split', id: 'home', tone: 'fresh', img: 'assets/clinic.jpg',
-      alt: 'Inside the Dapto clinic',
+    { t: 'split', id: 'home', tone: 'fresh', img: 'assets/clinic-room.jpg',
+      alt: 'A treatment room at Functional Physiotherapy',
       eyebrow: 'Where we see you',
       h2: 'Clinic appointments or home visits across the Illawarra',
       html: `
