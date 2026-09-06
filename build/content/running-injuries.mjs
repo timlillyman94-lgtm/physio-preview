@@ -103,6 +103,7 @@ export default register({
       list: [
         'Training plans built around your real routes and terrain',
         'Race-build planning &mdash; working backwards from your event date',
+        'Running injuries are a special interest of <a href="team.html">Chris Vitucci</a>',
         'Support for local running groups and clubs &mdash; get in touch',
       ],
     },

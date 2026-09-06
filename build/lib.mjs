@@ -222,6 +222,23 @@ function jsonLd(p) {
     });
   }
 
+  /* Person nodes — practitioner profiles. Brand searches ("vitucci physiotherapist")
+     are already in the GSC baseline, and named practitioners are a real E-E-A-T
+     signal for a health service. No `award`/`hasCredential` we cannot evidence. */
+  for (const person of p.people || []) {
+    graph.push({
+      '@type': 'Person',
+      '@id': `${prodUrl(p.slug)}#${person.id}`,
+      name: person.name,
+      jobTitle: person.jobTitle,
+      description: text(person.schemaBio || person.bio),
+      worksFor: { '@id': CLINIC_ID },
+      ...(person.image ? { image: `${site.origin}/${person.image}` } : {}),
+      ...(person.alumniOf ? { alumniOf: person.alumniOf.map((n) => ({ '@type': 'CollegeOrUniversity', name: n })) } : {}),
+      ...(person.knowsAbout ? { knowsAbout: person.knowsAbout } : {}),
+    });
+  }
+
   const faq = (p.blocks || []).find((b) => b.t === 'faq');
   if (faq) {
     graph.push({

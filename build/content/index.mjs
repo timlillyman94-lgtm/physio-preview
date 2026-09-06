@@ -17,7 +17,7 @@ export default register({
 
   blocks: [
     { t: 'hero', img: 'assets/gym.jpg', alt: 'Physiotherapist working with a patient at the Dapto clinic',
-      trust: ['One-on-one, every session', '8+ years in Dapto', 'WorkCover &amp; NDIS welcome'] },
+      trust: ['One-on-one, every session', 'Masters-qualified physiotherapist', 'HICAPS, WorkCover &amp; NDIS'] },
 
     { t: 'svcgrid', id: 'services', mid: true, eyebrow: 'What we treat',
       h2: 'Physiotherapy services in Dapto',
@@ -29,7 +29,7 @@ export default register({
       eyebrow: 'Our approach',
       h2: 'The Functional Physiotherapy approach',
       html: `
-<p>We have looked after the Dapto community for more than eight years, and the way we work has not really changed in that time: assess properly, explain honestly, treat hands-on, and build the strength underneath it so the problem stays fixed.</p>
+<p>Functional Physiotherapy is led by <a href="team.html">Chris Vitucci</a> &mdash; masters-qualified, with eight years of clinical experience across private practice, sporting teams, aged care and disability services. The way we work is simple: assess properly, explain honestly, treat hands-on, and build the strength underneath it so the problem stays fixed.</p>
 <p>Every appointment is one-on-one with your physiotherapist. You get a real explanation of what is going on, treatment on the day, and a plan you can actually follow &mdash; not a printout and a rebooking.</p>`,
       list: [
         'Treatment plans built around your goals, not a template',
@@ -40,7 +40,7 @@ export default register({
       cta: 'Book your first visit' },
 
     { t: 'stats', items: [
-      { n: '8+', l: 'years caring for Dapto' },
+      { n: '8', l: 'years clinical experience' },
       { n: '1:1', l: 'every session, every time' },
       { n: '9', l: 'services with their own page' },
       { n: '5', l: 'ways to fund your care' },

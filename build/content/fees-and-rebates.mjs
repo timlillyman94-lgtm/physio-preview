@@ -14,11 +14,11 @@ export default register({
   },
   title: 'Physio Fees &amp; Rebates Dapto | Private Health &amp; Medicare',
   metaDesc:
-    'Physiotherapy fees and rebates at our Dapto clinic: private health extras, Medicare chronic condition referrals, WorkCover and NDIS. Clear pricing, no surprises.',
+    'Physio fees and rebates in Dapto NSW. HICAPS on site and all health funds accepted, plus Medicare plans, WorkCover and NDIS. Claim on the spot, pay the gap.',
   eyebrow: 'Fees &amp; rebates',
   h1: 'Physiotherapy fees and rebates in Dapto',
   lead:
-    'No surprises at the front desk. Here is what an appointment costs, and <b>every way it can be paid for</b> &mdash; privately, through your health fund, on a Medicare referral, through WorkCover, or under an NDIS plan.',
+    'No surprises at the front desk. <b>HICAPS is on site and we accept all health funds</b>, so you claim instantly and pay only the gap. Medicare plans, WorkCover and NDIS are all handled here too.',
   schema: {
     name: 'Physiotherapy fees and funding options',
     serviceType: 'Physiotherapy',
@@ -32,12 +32,11 @@ export default register({
     { t: 'crumbs' },
 
     { t: 'note', tone: 'alt', html:
-      '<b>Draft page — pricing to be confirmed.</b> Fee figures below are placeholders pending confirmation from the clinic, ' +
-      'along with whether HICAPS on-the-spot claiming is available and which funds are supported (tracker item P0-07). ' +
-      'Everything else on this page is general information that applies regardless.' },
+      '<b>Draft page — consultation fees still to be confirmed.</b> The dollar figures in the table below are placeholders ' +
+      '(tracker P0-11), as are the DVA and cancellation-policy notes further down. Everything else on this page is confirmed.' },
 
     { t: 'table', id: 'fees', eyebrow: 'What it costs', h2: 'Appointment fees',
-      sub: 'One-on-one appointments with a physiotherapist. No consultation is shorter than it needs to be.',
+      sub: 'One-on-one appointments with a physiotherapist. <b>HICAPS is available on site</b>, so if you have private health extras you claim on the spot and pay only the gap.',
       cols: ['Appointment', 'Length', 'Fee'],
       rows: [
         ['Initial consultation', 'approx. 45 min', '$[TBC]'],
@@ -53,10 +52,10 @@ export default register({
       eyebrow: 'Funding options',
       sub: 'Most people use one of these five. If you are not sure which applies to you, call the clinic and we will work it out before you book.',
       items: [
-        { h3: 'Private health extras', sub: 'Most common',
-          p: 'If your policy includes extras cover with physiotherapy, you can claim a rebate on each visit. What you get back depends on your fund, your level of cover and how much of your annual limit you have used.',
+        { h3: 'Private health extras', sub: 'HICAPS on site',
+          p: 'Swipe your card at the desk and claim instantly — we accept all health funds. You pay only the gap. What you get back depends on your fund, your level of cover and how much of your annual limit you have used.',
           href: '#private-health', link: 'How it works' },
-        { h3: 'Medicare referral', sub: 'For chronic conditions',
+        { h3: 'Medicare plans', sub: 'For chronic conditions',
           p: 'If you have a chronic condition, your GP may be able to refer you for a limited number of subsidised allied health visits per calendar year under a chronic condition management plan.',
           href: '#medicare', link: 'Check eligibility' },
         { h3: 'WorkCover', sub: 'Injured at work',
@@ -79,7 +78,8 @@ export default register({
       html: `
 <p>If your policy includes extras (sometimes called ancillary or general treatment) cover with physiotherapy included, you can claim a rebate on each consultation. Three things determine what you actually get back: which fund you are with, what level of extras you hold, and how much of your annual physiotherapy limit you have already used for the calendar year. Some policies pay a fixed dollar amount per visit, some a percentage of the fee, and most cap the total per person per year.</p>
 <p>A few practical points worth knowing. Most funds pay a higher rebate on the initial consultation than on subsequent visits. Annual limits generally reset on 1 January, so if you have limit remaining in December it is worth using. Waiting periods apply to new policies and to upgrades. And you do not need a doctor&rsquo;s referral to claim physiotherapy on extras cover &mdash; you can simply book.</p>
-<p class="ph"><b>[To confirm]</b> Whether HICAPS on-the-spot claiming is available at the clinic, and which funds are supported. Until that is confirmed, assume you may need to pay on the day and claim through your fund&rsquo;s app or website with the receipt we provide.</p>`,
+<h3>Do you have HICAPS?</h3>
+<p><b>Yes &mdash; HICAPS is available on site, and we accept all health funds.</b> Bring your membership card to your appointment, swipe it at the desk, and the rebate is processed on the spot. You pay only the gap between our fee and what your fund covers. No forms, no receipts to upload, no waiting for the money to come back.</p>`,
     },
 
     { t: 'prose', id: 'medicare', eyebrow: 'Medicare',
@@ -109,8 +109,8 @@ export default register({
           a: 'No. Physiotherapists are primary contact practitioners, so you can book directly and claim on private health extras without a referral. A GP referral is only required if you are claiming a Medicare rebate under a chronic condition management plan.' },
         { q: 'Does Medicare cover physiotherapy?',
           a: 'Not for general physiotherapy. If you have a chronic condition, your GP may be able to refer you under a chronic condition management plan for a limited number of subsidised allied health visits per calendar year, commonly five shared across all allied health. Medicare pays a set rebate and a gap is normally payable.' },
-        { q: 'Can I claim physiotherapy on private health insurance?',
-          a: 'Yes, if your policy includes extras cover with physiotherapy. What you get back depends on your fund, your level of cover and your remaining annual limit. Most funds pay more on the initial consultation, and limits usually reset on 1 January.' },
+        { q: 'Do you have HICAPS, and which health funds do you accept?',
+          a: 'Yes, HICAPS is available on site and we accept all health funds. Bring your membership card, swipe at the desk and the rebate is processed immediately — you pay only the gap. What you get back depends on your fund, your level of cover and your remaining annual limit. Most funds pay a higher rebate on the initial consultation, and limits usually reset on 1 January.' },
         { q: 'Is there any cost for WorkCover or NDIS physiotherapy?',
           a: 'On an approved WorkCover claim, no — treatment is billed directly to your insurer with nothing to pay upfront. For NDIS participants, physiotherapy is funded from your plan; plan managed participants pay nothing directly, self managed participants pay and claim back through the myplace portal.' },
         { q: 'Can I use both Medicare and private health for the same visit?',

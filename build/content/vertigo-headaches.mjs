@@ -34,7 +34,7 @@ export default register({
 
   blocks: [
     { t: 'hero', img: 'assets/gym.jpg', alt: 'Physiotherapist assessing a patient in the clinic',
-      trust: ['Vestibular assessment', 'BPPV often resolves in 1&ndash;2 sessions', 'Balance &amp; falls prevention'] },
+      trust: ['Vestibular assessment', 'BPPV often resolves in 1&ndash;2 sessions', 'A special interest of <a href="team.html" style="color:inherit;text-decoration:underline">our principal physio</a>'] },
     { t: 'crumbs' },
     { t: 'toc', items: [
       ['overview', 'Start here'], ['bppv', 'BPPV &amp; positional vertigo'], ['vestibular', 'Vestibular physiotherapy'],

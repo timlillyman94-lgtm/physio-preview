@@ -43,7 +43,9 @@ export default register({
       html: `
 <p>Muscles under sustained load develop taut bands with hypersensitive spots inside them, known as trigger points. Press one and it hurts locally, often referring pain somewhere else entirely &mdash; which is why a trigger point in the upper trapezius can feel like a headache, and one in the glutes can feel like sciatica. Trigger points also shorten the muscle, which quietly limits range of motion and shifts load onto tissues that were not built to carry it.</p>
 <p>Dry needling treats those points directly. A fine, sterile, single-use needle is placed into the taut band. There is nothing injected &mdash; hence &ldquo;dry&rdquo;. The needle often produces a brief local twitch response, after which the band typically releases, blood flow to the area increases and the muscle&rsquo;s resting tension drops. Most people notice more movement and less local tenderness immediately.</p>
-<p>The important part is what happens next. A released muscle that goes straight back to the same load will tighten again. So we treat the trigger point, then address the reason it formed &mdash; a stiff joint above it, a weak muscle below it, a workstation, a training error, a running pattern. That is why we never sell dry needling on its own.</p>`,
+<p>The important part is what happens next. A released muscle that goes straight back to the same load will tighten again. So we treat the trigger point, then address the reason it formed &mdash; a stiff joint above it, a weak muscle below it, a workstation, a training error, a running pattern. That is why we never sell dry needling on its own.</p>
+<h3>Who is doing the needling?</h3>
+<p>Dry needling is a special interest of our principal physiotherapist, <a href="team.html">Chris Vitucci</a>, who has completed <b>three advanced GEMt courses</b> and <b>assists in teaching the technique to other health practitioners</b>. That matters more than it might sound: needling well is a matter of knowing precisely what sits under the needle and how a given muscle refers, and the people who teach a technique tend to be the people who have had to explain every part of it out loud.</p>`,
     },
 
     { t: 'prose', id: 'vs-acupuncture', tone: 'alt', eyebrow: 'Common question',
@@ -68,6 +70,7 @@ export default register({
         'Assessment first &mdash; we needle a diagnosis, not a sore spot',
         'Combined with manual therapy in the same session',
         'Performed by physiotherapists trained through the GEMt program',
+        '<a href="team.html">Chris</a> has completed <b>three advanced GEMt courses</b>',
         'Always paired with exercise so the change holds',
         'A clear explanation of what we are doing and why, before we start',
         'Honest review &mdash; if it is not helping, we change the plan',

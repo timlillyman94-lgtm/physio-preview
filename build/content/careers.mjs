@@ -23,7 +23,7 @@ export default register({
       h2: 'What working here is like',
       sub: 'A small, established clinic in a part of the Illawarra that is growing quickly.',
       html: `
-<p>Functional Physiotherapy has been treating the Dapto community for more than eight years from a clinic inside Dapto Medical Professionals, on the Princes Highway. The caseload is genuinely varied: sporting injuries from local clubs, work injuries from the region&rsquo;s industrial and care sectors, spinal pain, vestibular presentations, NDIS participants and post-surgical rehabilitation.</p>
+<p>Functional Physiotherapy was founded in 2022 and treats the Dapto community from a clinic inside Dapto Medical Professionals, on the Princes Highway. The caseload is genuinely varied: sporting injuries from local clubs, work injuries from the region&rsquo;s industrial and care sectors, spinal pain, vestibular presentations, NDIS participants and post-surgical rehabilitation.</p>
 <p>Appointments are one-on-one and long enough to do the job. We do not double-book, we do not hand patients to an assistant halfway through, and we do not measure a good day by how many bodies passed through the room. If you have worked somewhere that did, you will know why that is worth saying out loud.</p>
 <p>West Dapto is one of the largest residential growth areas in the state, which means the local population and the demand for good physiotherapy are both increasing. There is room here to build a caseload around what you are actually interested in.</p>`,
     },
