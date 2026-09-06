@@ -30,7 +30,7 @@ export default register({
       'TMJ and jaw pain', 'Sports physiotherapy', 'Aged care physiotherapy',
     ],
     schemaBio:
-      'Director and Principal Physiotherapist at Functional Physiotherapy, Dapto NSW. Bachelor of Exercise Science (University of Wollongong) and Master of Physiotherapy (University of Technology Sydney), with eight years of clinical experience across private practice, sporting teams, aged care and disability services. Founded Functional Physiotherapy in 2022. Has completed three advanced GEMT dry needling courses and assists in teaching the technique to other health practitioners.',
+      'Director and Principal Physiotherapist at Functional Physiotherapy, Dapto NSW. Bachelor of Exercise Science (University of Wollongong) and Master of Physiotherapy (University of Technology Sydney), with eight years of clinical experience across private practice, sporting teams, aged care and disability services. Founded Functional Physiotherapy in 2022. Has completed three advanced GEMt dry needling courses and assists in teaching the technique to other health practitioners.',
   }],
 
   blocks: [
@@ -56,8 +56,8 @@ export default register({
     { t: 'cards', tone: 'alt', eyebrow: 'Special interests', h2: 'What Chris works on most',
       sub: 'Every physiotherapist develops areas they go deeper on. These are his &mdash; and each links to the page that covers it properly.',
       items: [
-        { h3: 'Dry needling', sub: 'Three advanced GEMT courses',
-          p: 'Chris has completed three advanced GEMT dry needling courses and <b>assists in teaching the technique to other health practitioners</b>.',
+        { h3: 'Dry needling', sub: 'Three advanced GEMt courses',
+          p: 'Chris has completed three advanced GEMt dry needling courses and <b>assists in teaching the technique to other health practitioners</b>.',
           href: 'dry-needling.html', link: 'Dry needling' },
         { h3: 'Conservative ACL management', sub: 'Surgery is not the only path',
           p: 'Rehabilitating ACL injuries without reconstruction where that is the right call, and preparing the knee properly where it is not.',
