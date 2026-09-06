@@ -62,10 +62,10 @@ export default register({
         { name: 'The Herd Run Club', img: 'assets/club-herd-run-club.png' },
         { name: 'Berkeley Sports FC', img: 'assets/club-berkeley-sports-fc.png' },
         { name: 'Dandaloo FC', img: 'assets/club-dandaloo-fc.png' },
-        { name: 'Wollongong Wolves', img: 'assets/club-wollongong-wolves.png' },
+        'IFS Community Wolves FC',
       ],
-      note: '[To confirm with Chris: the exact nature of each association &mdash; sponsor, official physio, or informal &mdash; so the heading can say what is actually true. ' +
-        'Also confirm the fourth club: the brief said &ldquo;IFS Wolves FC&rdquo; but the supplied logo is the <b>Wollongong Wolves</b> crest.]' },
+      note: '[Awaiting the <b>IFS Community Wolves FC</b> logo file &mdash; the crest first supplied was Wollongong Wolves, a different club, and has been removed. ' +
+        'Also to confirm with Chris: the exact nature of each association &mdash; sponsor, official physio, or informal &mdash; so the heading can say what is actually true.]' },
 
     { t: 'suburbs', eyebrow: 'Where we work', h2: 'Serving Dapto and the Illawarra',
       sub: 'Based in Dapto, treating patients from across the region, with home visits available.' },
