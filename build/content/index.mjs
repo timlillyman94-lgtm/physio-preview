@@ -53,10 +53,19 @@ export default register({
         { h3: 'What happens on day one?', p: 'A thorough assessment, a plain-English explanation, treatment on the day and a small number of exercises to start straight away.', href: 'blog-first-visit.html', link: 'Your first visit' },
       ] },
 
-    { t: 'partners', eyebrow: 'In the community', h2: 'Proud supporters of Illawarra sport',
-      sub: 'We work with local clubs on injury prevention, sideline advice and getting players back on the park.',
-      items: ['Club logo', 'Club logo', 'Club logo', 'Club logo'],
-      note: '[Placeholder scaffold — awaiting the four club logo files (tracker P0-04). Club names to be confirmed before publishing.]' },
+    /* Wording deliberately says "associated with" — Chris's own phrase. Whether any of
+       these is a sponsorship or an official-physio arrangement is unconfirmed, and on a
+       regulated health service that difference is not cosmetic. See tracker RV-08. */
+    { t: 'partners', eyebrow: 'In the community', h2: 'Clubs we&rsquo;re associated with',
+      sub: 'Football and running clubs across the Illawarra &mdash; the people we see on the park as well as in the clinic.',
+      items: [
+        { name: 'The Herd Run Club', img: 'assets/club-herd-run-club.png' },
+        { name: 'Berkeley Sports FC', img: 'assets/club-berkeley-sports-fc.png' },
+        { name: 'Dandaloo FC', img: 'assets/club-dandaloo-fc.png' },
+        { name: 'Wollongong Wolves', img: 'assets/club-wollongong-wolves.png' },
+      ],
+      note: '[To confirm with Chris: the exact nature of each association &mdash; sponsor, official physio, or informal &mdash; so the heading can say what is actually true. ' +
+        'Also confirm the fourth club: the brief said &ldquo;IFS Wolves FC&rdquo; but the supplied logo is the <b>Wollongong Wolves</b> crest.]' },
 
     { t: 'suburbs', eyebrow: 'Where we work', h2: 'Serving Dapto and the Illawarra',
       sub: 'Based in Dapto, treating patients from across the region, with home visits available.' },

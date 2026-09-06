@@ -446,8 +446,11 @@ R.posts = (b) => section(b.tone || '', `${b.h2 ? sh(b) : ''}<div class="posts">$
     <div class="b"><span class="cat">${i.cat}</span><h3>${i.h3}</h3><p>${i.p}</p><span class="more">Read more &rarr;</span></div>
   </a>`).join('')}</div>`);
 
+/* items are {name, img} for a real logo, or a bare string for a placeholder slot */
 R.partners = (b) => section(b.tone || 'alt', `${sh(b, true)}<div class="partners">${
-  b.items.map((n) => `<div class="plogo"><span>${n}</span></div>`).join('')
+  b.items.map((it) => (typeof it === 'string'
+    ? `<div class="plogo"><span>${it}</span></div>`
+    : `<div class="plogo"><img src="${it.img}" alt="${attr(it.name)}" loading="lazy"></div>`)).join('')
 }</div>${b.note ? `<p class="tnote mid">${b.note}</p>` : ''}`);
 
 /* img:null renders an explicit empty slot — an unrelated photo in a person card
