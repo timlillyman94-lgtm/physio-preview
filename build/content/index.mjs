@@ -56,16 +56,19 @@ export default register({
     /* Wording deliberately says "associated with" — Chris's own phrase. Whether any of
        these is a sponsorship or an official-physio arrangement is unconfirmed, and on a
        regulated health service that difference is not cosmetic. See tracker RV-08. */
-    { t: 'partners', eyebrow: 'In the community', h2: 'Clubs we&rsquo;re associated with',
-      sub: 'Football and running clubs across the Illawarra &mdash; the people we see on the park as well as in the clinic.',
+    { t: 'partners', eyebrow: 'In the community', h2: 'Local clubs we&rsquo;re involved with',
+      sub: 'Dapto and the Illawarra run on club sport. These are the clubs closest to us &mdash; football and running, juniors through to seniors.',
       items: [
         { name: 'The Herd Run Club', img: 'assets/club-herd-run-club.png' },
         { name: 'Berkeley Sports FC', img: 'assets/club-berkeley-sports-fc.png' },
         { name: 'Dandaloo FC', img: 'assets/club-dandaloo-fc.png' },
         { name: 'IFS Community Wolves FC', img: 'assets/club-ifs-wolves.png' },
       ],
-      note: '[To confirm with Chris: the exact nature of each association &mdash; sponsor, official physio, or informal &mdash; so the heading can say what is actually true. ' +
-        'Logos were supplied as mixed-quality raster files and have been background-removed; a clean transparent PNG or vector from each club would look sharper.]' },
+      /* "involved with" is deliberate. Upgrade to "partner with" / "proudly sponsor" /
+         "official physio for" only once Chris confirms the arrangement — see RV-08. */
+      note: '[Heading currently reads &ldquo;involved with&rdquo;. If Chris confirms a sponsorship or official-physio arrangement with any of these clubs, ' +
+        'it can be upgraded to &ldquo;Local clubs we partner with&rdquo; &mdash; a one-word change. Until then the softer wording is the one we can stand behind. ' +
+        'Logos were supplied as mixed-quality raster files and have been background-removed; clean PNG or vector originals from each club would look sharper.]' },
 
     { t: 'suburbs', eyebrow: 'Where we work', h2: 'Serving Dapto and the Illawarra',
       sub: 'Based in Dapto, treating patients from across the region, with home visits available.' },
