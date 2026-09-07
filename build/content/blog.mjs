@@ -35,6 +35,7 @@ export const blogIndex = register({
 /* ── posts ─────────────────────────────────────────────────────────────────── */
 register({
   slug: 'blog-workers-comp',
+  path: 'post/workers-comp-physio-nsw',   // live URL — 1,416 impressions, do not move
   group: 'core', groupLabel: 'Blog', navActive: 'blog',
   crumb: 'Workers compensation physiotherapy in NSW', crumbParent: 'blog',
   card: { name: 'Workers comp physio in NSW', blurb: 'How the NSW scheme works, in plain English.' },
@@ -67,6 +68,7 @@ register({
 
 register({
   slug: 'blog-first-visit',
+  path: 'post/first-visit-physiotherapy', // live URL — pos 7.5, best-performing post
   group: 'core', groupLabel: 'Blog', navActive: 'blog',
   crumb: 'What to expect at your first appointment', crumbParent: 'blog',
   card: { name: 'Your first visit', blurb: 'What actually happens at a first physiotherapy appointment.' },
@@ -99,6 +101,7 @@ register({
 
 register({
   slug: 'blog-dapto-questions',
+  path: 'post/dapto-physio-questions',   // live URL
   group: 'core', groupLabel: 'Blog', navActive: 'blog',
   crumb: 'Your physiotherapy questions, answered', crumbParent: 'blog',
   card: { name: 'Common questions', blurb: 'The questions we are asked most often, answered honestly.' },

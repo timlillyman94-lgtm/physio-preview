@@ -54,7 +54,14 @@ export const ctaPair = (label) => `<div class="hero-cta">${bookBtn(label)}${call
 export const registry = {};
 export const register = (page) => { registry[page.slug] = page; return page; };
 export const url = (slug) => `${slug}.html`;
-export const prodUrl = (slug) => (slug === 'index' ? `${site.origin}/` : `${site.origin}/${slug}`);
+/* A page may declare `path` to pin its production URL. Used to preserve URLs that
+   already exist and rank on the live Wix site — the migration constraint is that
+   nothing moves without a reason. Otherwise the slug is the path. */
+export const prodUrl = (slug) => {
+  if (slug === 'index') return `${site.origin}/`;
+  const p = registry[slug] && registry[slug].path;
+  return `${site.origin}/${p || slug}`;
+};
 
 /* ── partials ──────────────────────────────────────────────────────────────── */
 const NAV = [

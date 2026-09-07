@@ -1,5 +1,5 @@
 /* Build the static site. Usage: node build/build.mjs  (run from site-preview/) */
-import { writeFileSync, readdirSync } from 'node:fs';
+import { writeFileSync, readdirSync, unlinkSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import { registry, render, PREVIEW, site, prodUrl } from './lib.mjs';
@@ -12,7 +12,10 @@ const out = join(here, '..');
 const files = readdirSync(join(here, 'content')).filter((f) => f.endsWith('.mjs')).sort();
 for (const f of files) await import(`./content/${f}`);
 
-const pages = Object.values(registry);
+/* group:'meta' pages are reviewer-facing only (next-steps.html says "concept
+   redesign preview, prepared by Tim"). They must never reach production. */
+const pages = Object.values(registry).filter((p) => PREVIEW || p.group !== 'meta');
+const excluded = Object.values(registry).filter((p) => !PREVIEW && p.group === 'meta');
 let words = 0;
 
 for (const p of pages) {
@@ -35,6 +38,13 @@ writeFileSync(join(out, 'sitemap.xml'),
     indexable.map((p) => `  <url><loc>${prodUrl(p.slug)}</loc><priority>${
       p.slug === 'index' ? '1.0' : p.schema ? '0.8' : '0.6'}</priority></url>`).join('\n')
   }\n</urlset>\n`, 'utf8');
+
+if (excluded.length) {
+  console.log(`\n  excluded from the production build: ${excluded.map((p) => `${p.slug}.html`).join(', ')}`);
+  for (const p of excluded) {
+    try { unlinkSync(join(out, `${p.slug}.html`)); console.log(`  deleted stale ${p.slug}.html`); } catch {}
+  }
+}
 
 console.log(`\n  ${pages.length} pages, ${words} words total. PREVIEW=${PREVIEW}` +
   (PREVIEW ? '  (noindex + banner ON — see tracker P6-03)' : '  ** LIVE: noindex removed **'));

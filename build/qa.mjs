@@ -129,5 +129,67 @@ for (const f of files)
   for (const m of readFileSync(f, 'utf8').matchAll(/<img [^>]*>/g))
     if (!/\balt="/.test(m[0])) noAlt.push(f);
 say(noAlt.length === 0, `every <img> has an alt attribute ${[...new Set(noAlt)].join(', ')}`);
+// 20-24. schema validation (P4-05) — structural checks Google's Rich Results
+// Test would flag, run locally so they cannot regress between manual checks.
+const schemaErrs = [];
+for (const f of files) {
+  const g = JSON.parse(readFileSync(f, 'utf8').match(/ld\+json">([\s\S]*?)<\/script>/)[1])['@graph'];
+  const byType = (t) => g.filter((n) => (Array.isArray(n['@type']) ? n['@type'] : [n['@type']]).includes(t));
+
+  const clinic = byType('MedicalBusiness')[0];
+  if (!clinic) schemaErrs.push(f + ': no MedicalBusiness node');
+  else {
+    for (const k of ['name', 'url', 'telephone', 'address', 'openingHoursSpecification'])
+      if (!clinic[k]) schemaErrs.push(f + ': clinic missing ' + k);
+    for (const k of ['streetAddress', 'addressLocality', 'addressRegion', 'postalCode', 'addressCountry'])
+      if (clinic.address && !clinic.address[k]) schemaErrs.push(f + ': address missing ' + k);
+    if (!/^\+61/.test(clinic.telephone || '')) schemaErrs.push(f + ': telephone not in E.164 form');
+  }
+
+  // every @id referenced somewhere must resolve to a node defined in this graph
+  const ids = new Set(g.map((n) => n['@id']).filter(Boolean));
+  const refs = JSON.stringify(g).match(/"@id":"[^"]+"/g) || [];
+  for (const r of refs) {
+    const id = r.slice(7, -1);
+    if (!ids.has(id) && !id.includes('#website')) schemaErrs.push(f + ': dangling @id ' + id);
+  }
+
+  // canonical and the WebPage node must agree, or Google sees two identities
+  const canon = (readFileSync(f, 'utf8').match(/rel="canonical" href="([^"]*)"/) || [])[1];
+  const wp = byType('WebPage')[0];
+  if (wp && wp.url !== canon) schemaErrs.push(f + ': WebPage.url ' + wp.url + ' != canonical ' + canon);
+
+  // breadcrumb positions must be 1..n in order
+  const bc = byType('BreadcrumbList')[0];
+  if (bc) bc.itemListElement.forEach((it, i) => {
+    if (it.position !== i + 1) schemaErrs.push(f + ': breadcrumb position out of order');
+  });
+
+  // FAQ answers must be non-empty plain text
+  const faq = byType('FAQPage')[0];
+  if (faq) for (const q of faq.mainEntity) {
+    if (!q.name || !q.acceptedAnswer || !q.acceptedAnswer.text) schemaErrs.push(f + ': empty FAQ entry');
+    if (/[<>]/.test(q.acceptedAnswer && q.acceptedAnswer.text || '')) schemaErrs.push(f + ': FAQ answer contains markup');
+  }
+}
+say(schemaErrs.length === 0, `schema validates structurally ${[...new Set(schemaErrs)].slice(0, 6).join(' | ')}`);
+
+// 25. canonicals must be absolute, https, www, and carry no trailing slash
+const badCanon = [];
+for (const f of files) {
+  const c = (readFileSync(f, 'utf8').match(/rel="canonical" href="([^"]*)"/) || [])[1] || '';
+  if (!/^https:\/\/www\.functionalphysio\.com\.au(\/|$)/.test(c)) badCanon.push(f + ' -> ' + c);
+  else if (c.length > 'https://www.functionalphysio.com.au/'.length && c.endsWith('/')) badCanon.push(f + ' -> ' + c);
+}
+say(badCanon.length === 0, `canonicals are https + www, no trailing slash ${badCanon.join(', ')}`);
+
+// 26. live Wix URLs that must survive the migration unchanged
+const mustKeep = ['/services', '/team', '/blog', '/post/workers-comp-physio-nsw',
+  '/post/first-visit-physiotherapy', '/post/dapto-physio-questions'];
+const canons = files.map((f) => ((readFileSync(f, 'utf8').match(/rel="canonical" href="([^"]*)"/) || [])[1] || '')
+  .replace('https://www.functionalphysio.com.au', ''));
+const lost = mustKeep.filter((u) => !canons.includes(u));
+say(lost.length === 0, `ranking URLs from the live site are preserved ${lost.join(', ')}`);
+
 console.log(fail ? `\n${fail} CHECK(S) FAILED` : '\nAll checks passed.');
 process.exit(fail ? 1 : 0);
