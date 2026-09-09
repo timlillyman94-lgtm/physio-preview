@@ -176,9 +176,17 @@ function clinicNode() {
     availableService: Object.values(registry)
       .filter((p) => p.schema)
       .map((p) => ({ '@type': 'MedicalTherapy', name: p.schema.name, url: prodUrl(p.slug) })),
+    /* Both profiles are linked from Chris's own live site, so they are his.
+       Note the Facebook handle still reads "griffith" — worth him renaming it
+       (Facebook allows username changes) rather than us omitting the profile.
+       TODO: add the Google Business Profile short link — Tim can copy it from
+       the GBP dashboard under "Share your Business Profile". */
+    sameAs: [
+      'https://www.facebook.com/functionalphysiogriffith',
+      'https://www.instagram.com/functional.physiotherapy',
+    ],
     // NOTE: no aggregateRating / review — AHPRA restricts testimonials for regulated
     // health services. See PROJECT-TRACKER.md decision log (2026-07). Do not add.
-    // TODO (pre-launch): add sameAs[] once GBP + social profile URLs are supplied.
   };
 }
 
