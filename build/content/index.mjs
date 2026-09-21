@@ -13,7 +13,7 @@ export default register({
   eyebrow: 'Physiotherapy in Dapto, NSW',
   h1: 'Get back to<br>what you love.',
   lead:
-    '<b>Your health, our commitment.</b> Evidence-based, one-on-one physiotherapy in Dapto &mdash; helping people across the Illawarra recover from injury, manage pain and get moving again.',
+    '<b>Your health, our commitment.</b> Evidence-based, one-on-one physiotherapy in Dapto: helping people across the Illawarra recover from injury, manage pain and get moving again.',
 
   blocks: [
     { t: 'hero', img: 'assets/hero-assessment.jpg', alt: 'Physiotherapist assessing a patient&rsquo;s shoulder movement at Functional Physiotherapy',
@@ -29,8 +29,8 @@ export default register({
       eyebrow: 'Our approach',
       h2: 'The Functional Physiotherapy approach',
       html: `
-<p>Functional Physiotherapy is led by <a href="team.html">Chris Vitucci</a> &mdash; masters-qualified, with eight years of clinical experience across private practice, sporting teams, aged care and disability services. The way we work is simple: assess properly, explain honestly, treat hands-on, and build the strength underneath it so the problem stays fixed.</p>
-<p>Every appointment is one-on-one with your physiotherapist. You get a real explanation of what is going on, treatment on the day, and a plan you can actually follow &mdash; not a printout and a rebooking.</p>`,
+<p>Functional Physiotherapy is led by <a href="team.html">Chris Vitucci</a>: masters-qualified, with eight years of clinical experience across private practice, sporting teams, aged care and disability services. The way we work is simple: assess properly, explain honestly, treat hands-on, and build the strength underneath it so the problem stays fixed.</p>
+<p>Every appointment is one-on-one with your physiotherapist. You get a real explanation of what is going on, treatment on the day, and a plan you can actually follow, not a printout and a rebooking.</p>`,
       list: [
         'Treatment plans built around your goals, not a template',
         'One-on-one sessions focused on lasting results, not quick fixes, with the <a href="team.html">same physiotherapist</a> each visit',
@@ -53,11 +53,11 @@ export default register({
         { h3: 'What happens on day one?', p: 'A thorough assessment, a plain-English explanation, treatment on the day and a small number of exercises to start straight away.', href: 'blog-first-visit.html', link: 'Your first visit' },
       ] },
 
-    /* Wording deliberately says "associated with" — Chris's own phrase. Whether any of
+    /* Wording deliberately says "associated with", Chris's own phrase. Whether any of
        these is a sponsorship or an official-physio arrangement is unconfirmed, and on a
        regulated health service that difference is not cosmetic. See tracker RV-08. */
     { t: 'partners', eyebrow: 'In the community', h2: 'Local clubs we&rsquo;re involved with',
-      sub: 'Dapto and the Illawarra run on club sport. These are the clubs closest to us &mdash; football and running, juniors through to seniors.',
+      sub: 'Dapto and the Illawarra run on club sport. These are the clubs closest to us, football and running, juniors through to seniors.',
       items: [
         { name: 'The Herd Run Club', img: 'assets/club-herd-run-club.png' },
         { name: 'Berkeley Sports FC', img: 'assets/club-berkeley-sports-fc.png' },
@@ -65,9 +65,9 @@ export default register({
         { name: 'IFS Community Wolves FC', img: 'assets/club-ifs-wolves.png' },
       ],
       /* "involved with" is deliberate. Upgrade to "partner with" / "proudly sponsor" /
-         "official physio for" only once Chris confirms the arrangement — see RV-08. */
+         "official physio for" only once Chris confirms the arrangement. See RV-08. */
       note: '[Heading currently reads &ldquo;involved with&rdquo;. If Chris confirms a sponsorship or official-physio arrangement with any of these clubs, ' +
-        'it can be upgraded to &ldquo;Local clubs we partner with&rdquo; &mdash; a one-word change. Until then the softer wording is the one we can stand behind. ' +
+        'it can be upgraded to &ldquo;Local clubs we partner with&rdquo;, a one-word change. Until then the softer wording is the one we can stand behind. ' +
         'Logos were supplied as mixed-quality raster files and have been background-removed; clean PNG or vector originals from each club would look sharper.]' },
 
     { t: 'suburbs', eyebrow: 'Where we work', h2: 'Serving Dapto and the Illawarra',
@@ -77,7 +77,7 @@ export default register({
       eyebrow: 'Careers',
       h2: 'Physiotherapists: come and work with us',
       html: `
-<p>We are growing, and we would like to hear from physiotherapists who want to treat properly &mdash; one-on-one appointments, time to assess, and support to develop a special interest rather than run a conveyor belt.</p>
+<p>We are growing, and we would like to hear from physiotherapists who want to treat properly: one-on-one appointments, time to assess, and support to develop a special interest rather than run a conveyor belt.</p>
 <p><a class="btn btn-line" href="careers.html">See what we are looking for</a></p>`,
       list: [
         'One-on-one caseload, realistic appointment lengths',

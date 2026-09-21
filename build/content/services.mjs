@@ -11,7 +11,7 @@ export default register({
   },
   title: 'Physiotherapy Services in Dapto | Functional Physiotherapy',
   metaDesc:
-    'Physiotherapy services in Dapto NSW — sports injury, dry needling, ACL and running injuries, back and neck pain, vertigo, WorkCover and NDIS.',
+    'Physiotherapy services in Dapto NSW: sports injury, dry needling, ACL and running injuries, back and neck pain, vertigo, WorkCover and NDIS.',
   eyebrow: 'What we treat',
   h1: 'Physiotherapy services in Dapto',
   lead:
@@ -40,7 +40,7 @@ export default register({
       items: ['neck-back-pain', 'vertigo-headaches'] },
 
     { t: 'svcgrid', id: 'funding', eyebrow: 'Group three', h2: 'Funding pathways',
-      sub: 'How your treatment gets paid for. Most people fall into one of these — and none of them require you to work it out alone.',
+      sub: 'How your treatment gets paid for. Most people fall into one of these, and none of them require you to work it out alone.',
       items: ['workcover', 'ndis', 'fees-and-rebates'] },
 
     { t: 'chips', eyebrow: 'Also available', h2: 'More ways we can help',
@@ -68,7 +68,7 @@ export default register({
       sub: 'Based in Dapto, treating patients from right across the region.' },
 
     { t: 'final', h2: 'Not sure which one you need?',
-      p: 'Call us and we will point you to the right place — or book an assessment and we will work it out in person.',
+      p: 'Call us and we will point you to the right place, or book an assessment and we will work it out in person.',
       cta: 'Book an appointment' },
   ],
 });

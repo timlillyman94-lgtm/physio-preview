@@ -18,7 +18,7 @@ export default register({
   eyebrow: 'NDIS physiotherapy',
   h1: 'NDIS physiotherapy in Dapto and the Illawarra',
   lead:
-    'Physiotherapy built around <b>the goals written in your plan</b> &mdash; mobility, strength, balance, independence &mdash; delivered one-on-one in the clinic or at home, and coordinated with the rest of your support team.',
+    'Physiotherapy built around <b>the goals written in your plan</b> (mobility, strength, balance, independence) delivered one-on-one in the clinic or at home, and coordinated with the rest of your support team.',
   schema: {
     name: 'NDIS physiotherapy',
     serviceType: 'NDIS physiotherapy',
@@ -44,20 +44,20 @@ export default register({
       h2: 'What NDIS physiotherapy involves',
       sub: 'The same clinical work as any other physiotherapy, aimed specifically at the functional goals your plan is built around.',
       html: `
-<p>NDIS physiotherapy starts from your plan rather than from a diagnosis. The plan says what you are trying to achieve &mdash; to walk further without needing a rest, to get in and out of the car independently, to manage the front steps, to keep working, to stop falling &mdash; and physiotherapy is one of the supports funded to help you get there.</p>
+<p>NDIS physiotherapy starts from your plan rather than from a diagnosis. The plan says what you are trying to achieve: to walk further without needing a rest, to get in and out of the car independently, to manage the front steps, to keep working, to stop falling. Physiotherapy is one of the supports funded to help you get there.</p>
 <p>So the first appointment is a conversation before it is an examination. We talk about what a good day looks like, what currently gets in the way, and which of your plan goals physiotherapy can realistically move. Then we assess: strength, movement, balance, walking, transfers, endurance, and how you manage the specific tasks that matter to you. From that we set out a program with measurable markers, so you and your plan manager can both see whether it is working.</p>
-<p>Sessions are one-on-one and unhurried. Progress in disability physiotherapy is often steadier and less dramatic than in sports rehabilitation, and it is measured in the things that change day-to-day life &mdash; an extra hundred metres, a transfer that no longer needs a second person, a month without a fall.</p>`,
+<p>Sessions are one-on-one and unhurried. Progress in disability physiotherapy is often steadier and less dramatic than in sports rehabilitation, and it is measured in the things that change day-to-day life: an extra hundred metres, a transfer that no longer needs a second person, a month without a fall.</p>`,
     },
 
     { t: 'prose', id: 'funding', tone: 'alt', eyebrow: 'Funding',
       h2: 'How is physiotherapy funded under the NDIS?',
       sub: 'Usually from the Capacity Building budget, under Improved Daily Living.',
       html: `
-<p>Physiotherapy is generally funded as a therapy support within <b>Capacity Building &mdash; Improved Daily Living</b>. That budget covers assessment, treatment, training and the reports that support your plan. If you are not sure whether your plan includes it, your plan manager or support coordinator can confirm quickly, and we are happy to speak with them directly.</p>
+<p>Physiotherapy is generally funded as a therapy support within <b>Capacity Building: Improved Daily Living</b>. That budget covers assessment, treatment, training and the reports that support your plan. If you are not sure whether your plan includes it, your plan manager or support coordinator can confirm quickly, and we are happy to speak with them directly.</p>
 <h3>Plan managed, self managed or agency managed?</h3>
 <p>We work with all three. If you are <b>plan managed</b>, we invoice your plan manager and you have nothing to pay. If you are <b>self managed</b>, we invoice you and you claim it back through the myplace participant portal. If you are <b>agency managed</b>, we claim through the NDIS portal directly. Tell us which applies when you book and we will handle the administration from there.</p>
 <h3>Do I need a referral?</h3>
-<p>No referral is needed. What helps most is bringing a copy of your plan, or at least the goals section, plus your NDIS number and your plan manager&rsquo;s details. If you have reports from other therapists &mdash; occupational therapy, exercise physiology, speech, a specialist &mdash; bring those too, so we are adding to the picture rather than duplicating work.</p>`,
+<p>No referral is needed. What helps most is bringing a copy of your plan, or at least the goals section, plus your NDIS number and your plan manager&rsquo;s details. If you have reports from other therapists (occupational therapy, exercise physiology, speech, a specialist) bring those too, so we are adding to the picture rather than duplicating work.</p>`,
     },
 
     { t: 'cols', id: 'goals',
@@ -65,7 +65,7 @@ export default register({
         'Walking distance, gait quality and confidence on uneven ground',
         'Strength and conditioning for everyday tasks',
         '<a href="vertigo-headaches.html">Balance and falls prevention</a>',
-        'Transfers &mdash; bed, chair, car, shower',
+        'Transfers: bed, chair, car, shower',
         'Pain management where it is limiting your function',
         'Rehabilitation after injury, illness or surgery',
         'Maintaining function in progressive conditions',
@@ -85,9 +85,9 @@ export default register({
       eyebrow: 'Where we see you',
       h2: 'Clinic appointments or home visits across the Illawarra',
       html: `
-<p>Sometimes the clinic is the right setting &mdash; there is equipment here, space to walk and load properly, and a distraction-free hour. Sometimes it is the wrong one. If the goal is managing your own front steps, getting off your own lounge, or moving safely around your own kitchen, then that is where the assessment needs to happen, and that is where we will come.</p>
+<p>Sometimes the clinic is the right setting: there is equipment here, space to walk and load properly, and a distraction-free hour. Sometimes it is the wrong one. If the goal is managing your own front steps, getting off your own lounge, or moving safely around your own kitchen, then that is where the assessment needs to happen, and that is where we will come.</p>
 <p>We offer home visits across Dapto and the wider Illawarra, including Wollongong, Shellharbour, Berkeley, Kanahooka, Horsley, Unanderra, Kembla Grange and Albion Park. Many participants use a mix: a home visit to set the program in the real environment, then clinic sessions to progress the loading, then a home visit again to check it has transferred.</p>
-<p>Access matters and we would rather sort it out before you arrive than after. Tell us what you need when you book &mdash; parking, mobility aids, a support worker attending, a longer appointment, a quieter time of day &mdash; and we will set the appointment up around it.</p>`,
+<p>Access matters and we would rather sort it out before you arrive than after. Tell us what you need when you book (parking, mobility aids, a support worker attending, a longer appointment, a quieter time of day) and we will set the appointment up around it.</p>`,
       list: [
         'Clinic: 2/20&ndash;30 Princes Highway, inside Dapto Medical Professionals',
         'Home visits across Dapto and the Illawarra',
@@ -101,18 +101,18 @@ export default register({
       sub: 'A plan review is only as good as the evidence in front of it. Ours is written to be useful, not to be filed.',
       html: `
 <p>Plans are reviewed, and the review asks a simple question: are these supports helping you pursue your goals? Answering it well requires more than an assertion that therapy has been going fine. It requires a baseline, a record of what was worked on, objective measures where they exist, and a clear statement of what would happen if the support stopped.</p>
-<p>We build that as we go rather than reconstructing it the week before. Assessment measures are recorded at the start and repeated at intervals, goals are written in observable terms, and progress notes track what changed. When your review comes around, we can produce a report that sets out where you started, what has changed, what has not, and what we recommend for the next plan &mdash; with reasons.</p>
+<p>We build that as we go rather than reconstructing it the week before. Assessment measures are recorded at the start and repeated at intervals, goals are written in observable terms, and progress notes track what changed. When your review comes around, we can produce a report that sets out where you started, what has changed, what has not, and what we recommend for the next plan, with reasons.</p>
 <p>If your support coordinator or plan manager wants to talk to us directly, that is welcome and usually saves everyone time. Just let us know who to contact.</p>`,
     },
 
     { t: 'faq', h2: 'NDIS physiotherapy FAQs',
       items: [
         { q: 'How is physiotherapy funded under the NDIS?',
-          a: 'Usually from your Capacity Building budget, under Improved Daily Living. That covers assessment, treatment and the reports that support your plan review. If you are not certain your plan includes it, your plan manager or support coordinator can confirm — or we can speak with them for you.' },
+          a: 'Usually from your Capacity Building budget, under Improved Daily Living. That covers assessment, treatment and the reports that support your plan review. If you are not certain your plan includes it, your plan manager or support coordinator can confirm, or we can speak with them for you.' },
         { q: 'Which plan management types do you accept?',
           a: 'Plan managed, self managed and agency managed participants are all welcome. Plan managed means we invoice your plan manager and you pay nothing; self managed means we invoice you and you claim through the myplace portal; agency managed means we claim through the NDIS portal directly. Tell us which applies when you book.' },
         { q: 'Do you do NDIS home visits in the Illawarra?',
-          a: 'Yes. We visit participants at home across Dapto, Wollongong, Shellharbour, Berkeley, Kanahooka, Horsley, Unanderra, Kembla Grange and Albion Park. Home visits are particularly valuable when the goal involves your own environment — steps, transfers, bathroom or kitchen tasks.' },
+          a: 'Yes. We visit participants at home across Dapto, Wollongong, Shellharbour, Berkeley, Kanahooka, Horsley, Unanderra, Kembla Grange and Albion Park. Home visits are particularly valuable when the goal involves your own environment: steps, transfers, bathroom or kitchen tasks.' },
         { q: 'Do I need a referral to use my NDIS funding for physiotherapy?',
           a: 'No referral is required. Bring your NDIS number, a copy of your plan or at least its goals, and your plan manager’s contact details. Any recent reports from other therapists are useful too, so we build on what has already been done.' },
         { q: 'Can my support worker or family member come to the session?',

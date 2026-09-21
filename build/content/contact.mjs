@@ -25,7 +25,7 @@ export default register({
     { t: 'cards', h2: 'Before your first appointment',
       eyebrow: 'Good to know',
       items: [
-        { h3: 'What to bring', p: 'Comfortable clothing you can move in, plus anything relevant to how you are paying — private health card, Medicare referral, WorkCover claim number or NDIS plan details.' },
+        { h3: 'What to bring', p: 'Comfortable clothing you can move in, plus anything relevant to how you are paying: private health card, Medicare referral, WorkCover claim number or NDIS plan details.' },
         { h3: 'How long it takes', p: 'Allow around 45 minutes for an initial consultation. Follow-up appointments are usually around 30 minutes.' },
         { h3: 'What it costs', p: 'Fees, private health rebates, Medicare referrals, WorkCover and NDIS are all set out on one page.', href: 'fees-and-rebates.html', link: 'Fees &amp; rebates' },
       ] },
