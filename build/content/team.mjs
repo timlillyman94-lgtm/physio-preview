@@ -2,7 +2,7 @@ import { register } from '../lib.mjs';
 
 /* Bio source: Chris's answers to P0-03 (2026-09-06), plus phrasing he asked us to
    keep from his current Wix bio. See the tracker Review register (RV-01) for the
-   AHPRA wording call — his "sought after / go-to physio" and "specialist" requests
+   AHPRA wording call: his "sought after / go-to physio" and "specialist" requests
    are replaced with verifiable specifics rather than self-declared superiority. */
 export default register({
   slug: 'team',
@@ -16,7 +16,7 @@ export default register({
   eyebrow: 'Our team',
   h1: 'The people treating you',
   lead:
-    'Functional Physiotherapy is led by <b>Chris Vitucci</b> &mdash; masters-qualified, eight years in clinical practice, and the reason patients across the Illawarra keep coming back to the same physio rather than whoever is free.',
+    'Functional Physiotherapy is led by <b>Chris Vitucci</b>. Masters-qualified, eight years in clinical practice, and the reason patients across the Illawarra keep coming back to the same physio rather than whoever is free.',
 
   people: [{
     id: 'chris-vitucci',
@@ -41,10 +41,9 @@ export default register({
       eyebrow: 'Director &amp; Principal Physiotherapist',
       h2: 'Chris Vitucci',
       html: `
-<p>Chris holds a <b>Bachelor of Exercise Science</b> from the University of Wollongong and a <b>Master of Physiotherapy</b> from UTS, and has eight years of clinical experience behind him. He has worked with athletes and sporting teams, in aged care, and with people living with disability &mdash; which is why the caseload here runs from a teenager&rsquo;s first hamstring tear to a ninety-year-old&rsquo;s balance and falls program without either feeling like an afterthought.</p>
-<p>He founded Functional Physiotherapy in 2022, originally in his home town of <b>Griffith, NSW</b>, to provide care the town badly needed. The practice now operates from Dapto, inside Dapto Medical Professionals on the Princes Highway.</p>
-<p>Chris takes a performance-based approach: the aim is to empower you to improve your health, function and capacity, whether that capacity is getting through a working day without your back locking up or getting back onto the park. He is a result-driven therapist who keeps looking for the optimal outcome rather than settling for a plateau.</p>
-<p>He has a gentle, easy-going nature and builds rapport quickly, and his can-do attitude tends to rub off on the people he treats.</p>`,
+<p>Chris holds a <b>Bachelor of Exercise Science</b> from the University of Wollongong and a <b>Master of Physiotherapy</b> from UTS, and has eight years of clinical experience behind him. He has worked with athletes and sporting teams, in aged care, and with people living with disability.</p>
+<p>He founded Functional Physiotherapy in 2022, originally in his home town of <b>Griffith, NSW</b>. The practice now operates from Dapto, inside Dapto Medical Professionals on the Princes Highway.</p>
+<p>Chris takes a performance-based approach and is a result-driven therapist who keeps looking for the optimal outcome rather than settling for a plateau. The aim is to empower you to always improve your health, function and capacity. Chris is known for his gentle, easy-going nature, strong client rapport, and his can-do attitude.</p>`,
       list: [
         'B. Exercise Science, <b>University of Wollongong</b>',
         'Master of Physiotherapy, <b>UTS</b>',
@@ -54,25 +53,19 @@ export default register({
       ] },
 
     { t: 'cards', tone: 'alt', eyebrow: 'Special interests', h2: 'What Chris works on most',
-      sub: 'Every physiotherapist develops areas they go deeper on. These are his &mdash; and each links to the page that covers it properly.',
+      sub: 'Every physiotherapist develops areas they go deeper on. These are his, and each links to the page that covers it properly.',
       items: [
-        { h3: 'Dry needling', sub: 'Three advanced GEMt courses',
-          p: 'Chris has completed three advanced GEMt dry needling courses and <b>assists in teaching the technique to other health practitioners</b>.',
+        { h3: 'Dry needling', p: 'Chris has completed three advanced GEMt dry needling courses and <b>assists in teaching the technique to other health practitioners</b>.',
           href: 'dry-needling.html', link: 'Dry needling' },
-        { h3: 'Conservative ACL management', sub: 'Surgery is not the only path',
-          p: 'Rehabilitating ACL injuries without reconstruction where that is the right call, and preparing the knee properly where it is not.',
+        { h3: 'Conservative ACL management', p: 'Rehabilitating ACL injuries without reconstruction where that is the right call, and preparing the knee properly where it is not.',
           href: 'acl-injuries.html', link: 'ACL rehabilitation' },
-        { h3: 'Running injuries', sub: 'Load, not rest',
-          p: 'Diagnosing what the tissue was not ready for, and building runners back up without taking their running away entirely.',
+        { h3: 'Running injuries', p: 'Diagnosing what the tissue was not ready for, and building runners back up without taking their running away entirely.',
           href: 'running-injuries.html', link: 'Running injuries' },
-        { h3: 'Chronic conditions', sub: 'The long game',
-          p: 'Persistent and long-standing pain, where progress is measured in months and honesty about timeframes matters more than optimism.',
+        { h3: 'Chronic conditions', p: 'Persistent and long-standing pain, where progress is measured in months and honesty about timeframes matters more than optimism.',
           href: 'services.html', link: 'All services' },
-        { h3: 'Vertigo &amp; dizziness', sub: 'Often fixable fast',
-          p: 'Positional vertigo, BPPV and balance problems — frequently resolved in one or two sessions once correctly identified.',
+        { h3: 'Vertigo &amp; dizziness', p: 'Positional vertigo, BPPV and balance problems, frequently resolved in one or two sessions once correctly identified.',
           href: 'vertigo-headaches.html', link: 'Vertigo &amp; headaches' },
-        { h3: 'TMJ &amp; jaw pain', sub: 'Under-served locally',
-          p: 'Jaw pain, clicking and restricted opening, and the neck and headache problems that so often travel with them.',
+        { h3: 'TMJ &amp; jaw pain', p: 'Jaw pain, clicking and restricted opening, and the neck and headache problems that so often travel with them.',
           href: 'services.html', link: 'Get in touch' },
       ] },
 
@@ -80,13 +73,13 @@ export default register({
       sub: 'As physiotherapists join, each gets their own profile here. People search for their physio by name, so named profiles matter for both trust and search.',
       items: [
         { name: '[Physiotherapist name]', role: 'Physiotherapist', img: null,
-          bio: '[Placeholder card showing how a second practitioner appears — photo, name, qualifications, a short bio and their special interests.]' },
+          bio: '[Placeholder card showing how a second practitioner appears: photo, name, qualifications, a short bio and their special interests.]' },
         { name: '[Physiotherapist name]', role: 'Physiotherapist', img: null,
           bio: '[Placeholder card. The grid reflows cleanly from one practitioner to nine or more, so this page scales as the clinic grows.]' },
         { name: 'Join us', role: 'We are hiring', img: 'assets/desk-notes.jpg', alt: 'Physiotherapist writing up notes at the clinic desk',
           bio: 'We would like to hear from physiotherapists who want a one-on-one caseload and real appointment lengths. <a href="careers.html">See what we are looking for &rarr;</a>' },
       ],
-      note: '<b>Placeholder.</b> Two cards above are scaffolding for future practitioners &mdash; they render as empty slots rather than showing an unrelated photo. ' +
+      note: '<b>Placeholder.</b> Two cards above are scaffolding for future practitioners, which render as empty slots rather than showing an unrelated photo. ' +
         'Chris&rsquo;s portrait is from the professional shoot he supplied, cropped above the chest so the &ldquo;Griffith&rdquo; uniform badge is out of frame; ' +
         'please still confirm the person shown is Chris (tracker P0-15).' },
 
@@ -95,7 +88,7 @@ export default register({
       h2: 'What one-on-one actually means here',
       html: `
 <p>Your appointment is with your physiotherapist, start to finish. You are not passed to an assistant halfway through, and you are not put on a machine in the corner while other people are seen.</p>
-<p>That matters clinically, not just as a courtesy. Assessment continues through the whole session, so treatment gets adjusted as we learn more. Exercises are taught and corrected rather than handed over on paper. And because the same person sees you each visit, we notice when something is not progressing the way it should &mdash; and say so.</p>`,
+<p>That matters clinically, not just as a courtesy. Assessment continues through the whole session, so treatment gets adjusted as we learn more. Exercises are taught and corrected rather than handed over on paper. And because the same person sees you each visit, we notice when something is not progressing the way it should, and say so.</p>`,
       list: [
         'Evidence-based, one-on-one care built around your goals',
         'Private, <a href="workcover.html">WorkCover</a> and <a href="ndis.html">NDIS</a> patients all welcome',
@@ -114,7 +107,7 @@ export default register({
       eyebrow: 'Join us',
       h2: 'We are looking for physiotherapists',
       html: `
-<p>The clinic is growing, and we would like to hear from physiotherapists who want to practise properly &mdash; real appointment lengths, a one-on-one caseload, and support to build a special interest.</p>
+<p>The clinic is growing, and we would like to hear from physiotherapists who want to practise properly: real appointment lengths, a one-on-one caseload, and support to build a special interest.</p>
 <p><a class="btn btn-line" href="careers.html">Careers at Functional Physiotherapy</a></p>` },
 
     { t: 'final', h2: 'Come and see us',
