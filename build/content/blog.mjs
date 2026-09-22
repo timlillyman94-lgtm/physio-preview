@@ -19,7 +19,7 @@ export const blogIndex = register({
       { href: 'blog-workers-comp.html', img: 'assets/band-glute.jpg', cat: 'WorkCover',
         h3: 'Workers Compensation Physiotherapy in NSW: What You Need to Know',
         p: 'Injured at work? How workers compensation physiotherapy works in NSW, what it covers, and how to choose your own physio.' },
-      { href: 'blog-first-visit.html', img: 'assets/clinic-room.jpg', cat: 'Getting started',
+      { href: 'blog-first-visit.html', img: 'assets/leg-raise.jpg', cat: 'Getting started',
         h3: 'What to Expect at Your First Physiotherapy Appointment',
         p: 'Never seen a physio before? Exactly what happens at your first visit, and how to prepare.' },
       { href: 'blog-dapto-questions.html', img: 'assets/hero-assessment.jpg', cat: 'FAQs',

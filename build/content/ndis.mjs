@@ -80,8 +80,8 @@ export default register({
       ] },
     },
 
-    { t: 'split', id: 'home', tone: 'fresh', img: 'assets/clinic-room.jpg',
-      alt: 'A treatment room at Functional Physiotherapy',
+    { t: 'split', id: 'home', tone: 'fresh', img: 'assets/shoulder-exercise.jpg',
+      alt: 'Physiotherapist supervising a shoulder strengthening exercise',
       eyebrow: 'Where we see you',
       h2: 'Clinic appointments or home visits across the Illawarra',
       html: `

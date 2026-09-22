@@ -17,7 +17,7 @@ export default register({
   blocks: [
     { t: 'phero' },
     { t: 'crumbs' },
-    { t: 'contactinfo', img: 'assets/clinic-room.jpg', alt: 'A treatment room at Functional Physiotherapy Dapto' },
+    { t: 'contactinfo', img: 'assets/neck-supine-2.jpg', alt: 'Physiotherapist treating a patient&rsquo;s neck during a one-on-one appointment' },
 
     { t: 'map', tone: 'alt', eyebrow: 'Finding us', h2: 'Where we are',
       sub: 'On the Princes Highway in Dapto, inside Dapto Medical Professionals. On-site and street parking available.' },

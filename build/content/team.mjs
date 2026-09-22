@@ -16,7 +16,7 @@ export default register({
   eyebrow: 'Our team',
   h1: 'The people treating you',
   lead:
-    'Functional Physiotherapy is led by <b>Chris Vitucci</b>. Masters-qualified, eight years in clinical practice, and the reason patients across the Illawarra keep coming back to the same physio rather than whoever is free.',
+    'Functional Physiotherapy is led by <b>Chris Vitucci</b>, a masters-qualified physiotherapist with eight years of clinical experience.',
 
   people: [{
     id: 'chris-vitucci',
@@ -69,8 +69,8 @@ export default register({
           href: 'services.html', link: 'Get in touch' },
       ] },
 
-    { t: 'bios', eyebrow: 'The wider team', h2: 'Growing the team',
-      sub: 'Chris is currently the clinic&rsquo;s only physiotherapist, so he is who you will see. As the team grows, each new physiotherapist will appear here.',
+    { t: 'bios', eyebrow: 'Careers', h2: 'Growing our team',
+      sub: 'We&rsquo;re looking for physiotherapists to join Functional Physiotherapy in Dapto. If you&rsquo;re interested in working with us, visit our careers page to find out more.',
       /* The two "[Physiotherapist name]" scaffold cards and the reviewer note were removed
          09-22 (Tim): bracketed placeholder copy addressed to us, rendered on a page Chris
          is about to read. The "Join us" card stays, and is now the only inbound link to
@@ -78,12 +78,12 @@ export default register({
          depends on it. P0-15 (confirm the portrait is Chris) is still open on the tracker. */
       items: [
         { name: 'Join us', role: 'Physiotherapists', img: 'assets/desk-notes.jpg', alt: 'Physiotherapist writing up notes at the clinic desk',
-          bio: 'We would like to hear from physiotherapists who want a one-on-one caseload and real appointment lengths. <a href="careers.html">See what we are looking for &rarr;</a>' },
+          bio: 'We would like to hear from physiotherapists who want a one-on-one caseload and real appointment lengths. <a href="careers.html">Explore career opportunities &rarr;</a>' },
       ] },
 
-    { t: 'split', tone: 'fresh', flip: true, img: 'assets/clinic-room.jpg', alt: 'A treatment room at Functional Physiotherapy Dapto',
+    { t: 'split', tone: 'fresh', flip: true, img: 'assets/calf-treatment.jpg', alt: 'Physiotherapist treating a patient&rsquo;s calf',
       eyebrow: 'Our approach',
-      h2: 'What one-on-one actually means here',
+      h2: 'One-on-one physiotherapy',
       html: `
 <p>Your appointment is with your physiotherapist, start to finish. You are not passed to an assistant halfway through, and you are not put on a machine in the corner while other people are seen.</p>
 <p>That matters clinically, not just as a courtesy. Assessment continues through the whole session, so treatment gets adjusted as we learn more. Exercises are taught and corrected rather than handed over on paper. And because the same person sees you each visit, we notice when something is not progressing the way it should, and say so.</p>`,

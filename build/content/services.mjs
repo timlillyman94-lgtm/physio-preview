@@ -50,7 +50,7 @@ export default register({
         'Falls prevention', 'Post-surgical rehabilitation', 'Telehealth consultations', 'Home visits',
       ] },
 
-    { t: 'split', tone: 'fresh', img: 'assets/clinic-room.jpg', alt: 'A treatment room at Functional Physiotherapy',
+    { t: 'split', tone: 'fresh', img: 'assets/back-treatment.jpg', alt: 'Physiotherapist delivering hands-on treatment to a patient&rsquo;s back',
       eyebrow: 'How we work',
       h2: 'One-on-one, every session',
       html: `

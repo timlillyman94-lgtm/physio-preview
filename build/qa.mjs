@@ -102,13 +102,15 @@ const napBad = files.filter(f => { const h = readFileSync(f,'utf8');
   return !h.includes('4221 9637') || !h.includes('Dapto NSW 2530'); });
 say(napBad.length === 0, `NAP (phone + address) on every page ${napBad.join(', ')}`);
 
-// 16. retired Griffith-legible photos must not come back
+// 16. retired photos must not come back: the Griffith-legible set, plus clinic-room.jpg,
+// pulled 09-23 (Tim) as an empty room with no person in it. Every page it held now shows
+// treatment actually happening.
 const retired = ['hero.jpg','logo.jpg','clinic.jpg','gym.jpg','equipment.jpg','team-1.jpg',
-  'treatment-1.jpg','treatment-2.jpg','treatment-3.jpg','treatment-4.jpg'];
+  'treatment-1.jpg','treatment-2.jpg','treatment-3.jpg','treatment-4.jpg','clinic-room.jpg'];
 const back = [];
 for (const f of files) for (const r of retired)
   if (readFileSync(f, 'utf8').includes('assets/' + r)) back.push(f + ' -> ' + r);
-say(back.length === 0, `retired Griffith-branded photos stay retired ${back.join(', ')}`);
+say(back.length === 0, `retired photos stay retired ${back.join(', ')}`);
 
 // 17. every file in assets/ is actually referenced (no dead weight in the repo)
 const usedAssets = new Set();

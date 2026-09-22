@@ -18,7 +18,7 @@ export default register({
   eyebrow: 'Sports physiotherapy',
   h1: 'Sports injury physiotherapy in Dapto',
   lead:
-    'Sports physiotherapy covers injury assessment and rehabilitation for weekend and representative athletes. We help you work out what training is safe now and use <b>sport-specific testing</b> to guide your return to competition.',
+    'Sports physiotherapy covers injury assessment and rehabilitation for all types of athletes. We help you work out what training is safe now and use <b>sport-specific testing</b> to guide your return to competition.',
   schema: {
     name: 'Sports injury physiotherapy and rehabilitation',
     serviceType: 'Sports physiotherapy',
@@ -37,7 +37,7 @@ export default register({
     { t: 'crumbs' },
     { t: 'toc', items: [
       ['overview', 'What we do'], ['injuries', 'Injuries we treat'], ['phases', 'The rehab phases'],
-      ['local', 'Illawarra sport'], ['prevention', 'Preventing the next one'], ['faq', 'FAQs'],
+      ['local', 'Illawarra sport'], ['prevention', 'Preventing injuries'], ['faq', 'FAQs'],
     ] },
 
     { t: 'prose', id: 'overview', eyebrow: 'Assessment and rehabilitation',
