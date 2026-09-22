@@ -23,7 +23,7 @@ export default register({
 <ul>
   <li><b>Home</b> and a <b>Services hub</b> grouped three ways: services, conditions and funding pathways</li>
   <li><b>Nine service pages</b>, each with its own full page: Sports Injury, Dry Needling, ACL Injuries, Running Injuries, Neck &amp; Back Pain, Headaches &amp; Vertigo, WorkCover, NDIS, and Fees &amp; Rebates</li>
-  <li><b>Team</b>, <b>Careers</b>, <b>Contact</b> (with a map), and a <b>Blog</b> with three articles</li>
+  <li><b>Team</b>, <b>Careers</b>, <b>Contact</b> (with a map), and a <b>Resources</b> section with three articles</li>
   <li>Search-engine structured data on every page, and consistent titles, descriptions and internal links</li>
 </ul>
 

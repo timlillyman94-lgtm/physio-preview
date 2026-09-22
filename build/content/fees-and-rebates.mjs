@@ -50,7 +50,7 @@ export default register({
 
     { t: 'cards', h2: 'Ways to pay for physiotherapy',
       eyebrow: 'Funding options',
-      sub: 'These are the funding options covered on this page. Call before booking if you are unsure which applies.',
+      sub: 'Most people pay for physiotherapy one of these ways. Call before booking if you are unsure which applies.',
       items: [
         { h3: 'Private health extras', sub: 'HICAPS on site',
           p: 'We accept all health funds and can process eligible extras claims through HICAPS. You pay the difference between the fee and your rebate. What you get back depends on your fund, your level of cover and how much of your annual limit you have used.',
@@ -68,7 +68,7 @@ export default register({
           p: 'You do not need insurance, a referral or a plan to see a physiotherapist. Book, pay the consultation fee on the day, and keep the receipt for your records.',
           href: null },
         { h3: 'Third party / CTP', sub: 'To be confirmed',
-          p: 'Motor accident and other third-party claims are handled differently again. We are confirming the detail for this page. Call the clinic in the meantime and we will tell you where you stand.',
+          p: 'Motor accident and other third-party claims are handled differently again. We are confirming the detail. Call the clinic in the meantime and we will tell you where you stand.',
           href: null },
       ] },
 

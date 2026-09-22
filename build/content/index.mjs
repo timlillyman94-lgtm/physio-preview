@@ -21,11 +21,11 @@ export default register({
 
     { t: 'svcgrid', id: 'services', mid: true, eyebrow: 'What we treat',
       h2: 'Physiotherapy services in Dapto',
-      sub: 'From a torn hamstring to a decade of back pain, every service has its own page with real detail.',
+      sub: 'Treating injury and pain, and supporting people with disability, across Dapto and the Illawarra.',
       items: ['sports-injury', 'neck-back-pain', 'dry-needling', 'workcover', 'ndis', 'vertigo-headaches'],
       all: true },
 
-    { t: 'split', tone: 'fresh', img: 'assets/clinic-room.jpg', alt: 'A treatment room at Functional Physiotherapy',
+    { t: 'split', tone: 'fresh', img: 'assets/neck-supine.jpg', alt: 'Physiotherapist treating a patient&rsquo;s neck during a one-on-one appointment',
       eyebrow: 'Our approach',
       h2: 'The Functional Physiotherapy approach',
       html: `
@@ -39,11 +39,13 @@ export default register({
       ],
       cta: 'Book your first visit' },
 
+    /* Two tiles only, deliberately. The "9 services with their own page" and "5 ways to
+       fund your care" tiles were removed: both boasted about the website rather than the
+       care. A third tile for patients treated is ready to add once Chris supplies a rough
+       number (tracker Q20). The .stats grid auto-fits, so 2 or 3 both render correctly. */
     { t: 'stats', items: [
       { n: '8', l: 'years clinical experience' },
       { n: '1:1', l: 'every session, every time' },
-      { n: '9', l: 'services with their own page' },
-      { n: '5', l: 'ways to fund your care' },
     ] },
 
     { t: 'cards', tone: '', eyebrow: 'Getting started', h2: 'Three things people ask before booking',
@@ -65,25 +67,17 @@ export default register({
         { name: 'IFS Community Wolves FC', img: 'assets/club-ifs-wolves.png' },
       ],
       /* "involved with" is deliberate. Upgrade to "partner with" / "proudly sponsor" /
-         "official physio for" only once Chris confirms the arrangement. See RV-08. */
-      note: '[Heading currently reads &ldquo;involved with&rdquo;. If Chris confirms a sponsorship or official-physio arrangement with any of these clubs, ' +
-        'it can be upgraded to &ldquo;Local clubs we partner with&rdquo;, a one-word change. Until then the softer wording is the one we can stand behind. ' +
-        'Logos were supplied as mixed-quality raster files and have been background-removed; clean PNG or vector originals from each club would look sharper.]' },
+         "official physio for" only once Chris confirms the arrangement. See RV-08, asked
+         as Q3. The on-page reviewer note that used to sit here was removed 09-22: the
+         question is already on Chris's sheet, so it did not need restating to visitors. */ },
 
     { t: 'suburbs', eyebrow: 'Where we work', h2: 'Serving Dapto and the Illawarra',
       sub: 'Based in Dapto, treating patients from across the region, with home visits available.' },
 
-    { t: 'split', tone: 'alt', flip: true, img: 'assets/shoulder-exercise.jpg', alt: 'Physiotherapist supervising a shoulder strengthening exercise',
-      eyebrow: 'Careers',
-      h2: 'Physiotherapists: come and work with us',
-      html: `
-<p>We are growing, and we would like to hear from physiotherapists who want to treat properly: one-on-one appointments, time to assess, and support to develop a special interest rather than run a conveyor belt.</p>
-<p><a class="btn btn-line" href="careers.html">See what we are looking for</a></p>`,
-      list: [
-        'One-on-one caseload, realistic appointment lengths',
-        'Mentoring and professional development support',
-        'A genuinely local clinic in a growing part of the Illawarra',
-      ] },
+    /* The careers block was removed from the homepage 09-22 (Tim): the clinic is not
+       growing fast enough to give recruitment homepage real estate, and "We are growing"
+       is a claim we cannot support. careers.html still exists and is still linked from
+       team.html, so it is not orphaned and the page can rank on its own. */
 
     { t: 'final', id: 'book', h2: 'Schedule your visit',
       p: 'Book online in under a minute, or call the clinic and we will find a time that works.',

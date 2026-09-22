@@ -76,6 +76,7 @@ section{padding:clamp(56px,8vw,104px) 0}
 .sh{max-width:640px;margin-bottom:clamp(30px,4vw,52px)}
 .sh.mid{margin-inline:auto;text-align:center}
 .sh h2{font-size:clamp(1.8rem,3.6vw,2.7rem);margin-top:14px;font-weight:600}
+.sh h2:first-child{margin-top:0}
 .sh p{color:var(--soft);margin-top:14px;font-weight:300;font-size:1.05rem}
 .sh p b{color:var(--ink);font-weight:600}
 .alt{background:var(--surface);border-block:1px solid var(--line)}
@@ -124,7 +125,7 @@ section{padding:clamp(56px,8vw,104px) 0}
 
 /* dark bands */
 .band{background:var(--accent-tint);color:var(--ink);border-block:1px solid var(--line)}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:30px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:30px;max-width:900px;margin-inline:auto}
 @media (max-width:680px){.stats{grid-template-columns:1fr 1fr;gap:40px 24px}}
 .stat{text-align:center}
 .stat .n{font-size:clamp(2.4rem,5vw,3.4rem);font-weight:600;line-height:1;color:var(--accent-deep);letter-spacing:-.02em}

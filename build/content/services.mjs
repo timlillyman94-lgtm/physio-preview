@@ -15,7 +15,7 @@ export default register({
   eyebrow: 'What we treat',
   h1: 'Physiotherapy services in Dapto',
   lead:
-    'Grouped three ways so you can find your way in quickly: <b>the treatments we provide</b>, <b>the conditions we treat</b>, and <b>how your care can be funded</b>. Every item below has its own page with the detail.',
+    'What we treat at our Dapto clinic: <b>sports and work injuries</b>, <b>back, neck and nerve pain</b>, <b>dizziness and headaches</b>, and <b>ACL and running rehabilitation</b>. Private, WorkCover, NDIS and Medicare-referred patients are all seen here.',
   schema: {
     name: 'Physiotherapy services',
     serviceType: 'Physiotherapy',
@@ -31,20 +31,20 @@ export default register({
     { t: 'phero' },
     { t: 'crumbs' },
 
-    { t: 'svcgrid', id: 'services', eyebrow: 'Group one', h2: 'Services',
-      sub: 'The treatments and programs we deliver. If you already know what you need, start here.',
+    { t: 'svcgrid', id: 'services', h2: 'Services',
+      sub: 'Hands-on treatment, dry needling and staged rehabilitation programs for injury and return to sport.',
       items: ['sports-injury', 'dry-needling', 'acl-injuries', 'running-injuries'] },
 
-    { t: 'svcgrid', tone: 'alt', id: 'conditions', eyebrow: 'Group two', h2: 'Conditions we treat',
-      sub: 'If you know what hurts but not what to call it, start here instead.',
+    { t: 'svcgrid', tone: 'alt', id: 'conditions', h2: 'Conditions we treat',
+      sub: 'Back and neck pain, sciatica, dizziness, vertigo and headaches.',
       items: ['neck-back-pain', 'vertigo-headaches'] },
 
-    { t: 'svcgrid', id: 'funding', eyebrow: 'Group three', h2: 'Funding pathways',
-      sub: 'How your treatment gets paid for. Most people fall into one of these, and none of them require you to work it out alone.',
+    { t: 'svcgrid', id: 'funding', h2: 'Funding pathways',
+      sub: 'How your treatment is paid for. If you are not sure which applies to you, call the clinic and we will work it out before you book.',
       items: ['workcover', 'ndis', 'fees-and-rebates'] },
 
     { t: 'chips', eyebrow: 'Also available', h2: 'More ways we can help',
-      sub: 'Treated at the clinic, without a dedicated page yet. Get in touch and we will tell you how we can help.',
+      sub: 'Also treated at the clinic. Get in touch and we will tell you how we can help.',
       items: [
         'TMJ &amp; jaw pain', 'Chronic pain management', 'Strengthening &amp; conditioning',
         'Falls prevention', 'Post-surgical rehabilitation', 'Telehealth consultations', 'Home visits',

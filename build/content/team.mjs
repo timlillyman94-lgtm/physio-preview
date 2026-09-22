@@ -53,7 +53,7 @@ export default register({
       ] },
 
     { t: 'cards', tone: 'alt', eyebrow: 'Special interests', h2: 'What Chris works on most',
-      sub: 'Every physiotherapist develops areas they go deeper on. These are his, and each links to the page that covers it properly.',
+      sub: 'Every physiotherapist develops areas they go deeper on. These are his.',
       items: [
         { h3: 'Dry needling', p: 'Chris has completed three advanced GEMt dry needling courses and <b>assists in teaching the technique to other health practitioners</b>.',
           href: 'dry-needling.html', link: 'Dry needling' },
@@ -70,18 +70,16 @@ export default register({
       ] },
 
     { t: 'bios', eyebrow: 'The wider team', h2: 'Growing the team',
-      sub: 'As physiotherapists join, each gets their own profile here. People search for their physio by name, so named profiles matter for both trust and search.',
+      sub: 'Chris is currently the clinic&rsquo;s only physiotherapist, so he is who you will see. As the team grows, each new physiotherapist will appear here.',
+      /* The two "[Physiotherapist name]" scaffold cards and the reviewer note were removed
+         09-22 (Tim): bracketed placeholder copy addressed to us, rendered on a page Chris
+         is about to read. The "Join us" card stays, and is now the only inbound link to
+         careers.html since the homepage careers block was removed, so QA's orphan check
+         depends on it. P0-15 (confirm the portrait is Chris) is still open on the tracker. */
       items: [
-        { name: '[Physiotherapist name]', role: 'Physiotherapist', img: null,
-          bio: '[Placeholder card showing how a second practitioner appears: photo, name, qualifications, a short bio and their special interests.]' },
-        { name: '[Physiotherapist name]', role: 'Physiotherapist', img: null,
-          bio: '[Placeholder card. The grid reflows cleanly from one practitioner to nine or more, so this page scales as the clinic grows.]' },
-        { name: 'Join us', role: 'We are hiring', img: 'assets/desk-notes.jpg', alt: 'Physiotherapist writing up notes at the clinic desk',
+        { name: 'Join us', role: 'Physiotherapists', img: 'assets/desk-notes.jpg', alt: 'Physiotherapist writing up notes at the clinic desk',
           bio: 'We would like to hear from physiotherapists who want a one-on-one caseload and real appointment lengths. <a href="careers.html">See what we are looking for &rarr;</a>' },
-      ],
-      note: '<b>Placeholder.</b> Two cards above are scaffolding for future practitioners, which render as empty slots rather than showing an unrelated photo. ' +
-        'Chris&rsquo;s portrait is from the professional shoot he supplied, cropped above the chest so the &ldquo;Griffith&rdquo; uniform badge is out of frame; ' +
-        'please still confirm the person shown is Chris (tracker P0-15).' },
+      ] },
 
     { t: 'split', tone: 'fresh', flip: true, img: 'assets/clinic-room.jpg', alt: 'A treatment room at Functional Physiotherapy Dapto',
       eyebrow: 'Our approach',

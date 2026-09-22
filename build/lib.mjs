@@ -67,7 +67,7 @@ export const prodUrl = (slug) => {
 const NAV = [
   ['services', 'Services'],
   ['team', 'Team'],
-  ['blog', 'Blog'],
+  ['blog', 'Resources'],
   ['contact', 'Contact'],
 ];
 
@@ -119,7 +119,7 @@ function footer() {
     ['Conditions', [['neck-back-pain', 'Neck &amp; back pain'], ['vertigo-headaches', 'Headaches &amp; vertigo'],
       ['services', 'All services']]],
     ['Funding', [['workcover', 'WorkCover'], ['ndis', 'NDIS'], ['fees-and-rebates', 'Fees &amp; rebates']]],
-    ['Clinic', [['team', 'Our team'], ['careers', 'Careers'], ['blog', 'Blog'], ['contact', 'Contact']]],
+    ['Clinic', [['team', 'Our team'], ['careers', 'Careers'], ['blog', 'Resources'], ['contact', 'Contact']]],
   ].map(([h, items]) =>
     `<div><h5>${h}</h5><ul>${items.map(([s, l]) => `<li><a href="${url(s)}">${l}</a></li>`).join('')}</ul></div>`).join('\n  ');
 
@@ -450,7 +450,7 @@ export function render(p) {
 /* ── extra block renderers (registered onto R after definition) ────────────── */
 R.article = (b, p) => `
 <article><section style="padding-bottom:0"><div class="wrap article">
-  <div class="meta"><a href="blog.html">&larr; Blog</a> &nbsp;&middot;&nbsp; ${b.cat} &nbsp;&middot;&nbsp; ${b.date}</div>
+  <div class="meta"><a href="blog.html">&larr; Resources</a> &nbsp;&middot;&nbsp; ${b.cat} &nbsp;&middot;&nbsp; ${b.date}</div>
   <h1>${p.h1}</h1>
   <div class="prose">${b.html}</div>
 </div></section></article>`;

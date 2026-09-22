@@ -3,13 +3,13 @@ import { register } from '../lib.mjs';
 export const blogIndex = register({
   slug: 'blog',
   group: 'core',
-  groupLabel: 'Blog',
-  crumb: 'Blog',
-  card: { name: 'Blog', blurb: 'Practical advice from our physiotherapists.' },
+  groupLabel: 'Resources',
+  crumb: 'Resources',
+  card: { name: 'Resources', blurb: 'Practical advice from our physiotherapists.' },
   title: 'Physiotherapy Tips &amp; Advice | Functional Physiotherapy Dapto',
   metaDesc:
     'Practical, plain-English physiotherapy advice from our Dapto physios: injuries, recovery, WorkCover, and getting the most out of your treatment.',
-  eyebrow: 'Blog',
+  eyebrow: 'Resources',
   h1: 'Tips &amp; advice from our physios',
   lead: 'Practical, plain-English guidance on injuries, recovery and getting the most from your physiotherapy.',
   blocks: [
@@ -36,7 +36,7 @@ export const blogIndex = register({
 register({
   slug: 'blog-workers-comp',
   path: 'post/workers-comp-physio-nsw',   // live URL: 1,416 impressions, do not move
-  group: 'core', groupLabel: 'Blog', navActive: 'blog',
+  group: 'core', groupLabel: 'Resources', navActive: 'blog',
   crumb: 'Workers compensation physiotherapy in NSW', crumbParent: 'blog',
   card: { name: 'Workers comp physio in NSW', blurb: 'How the NSW scheme works, in plain English.' },
   title: 'Workers Compensation Physio NSW | What You Need to Know',
@@ -69,7 +69,7 @@ register({
 register({
   slug: 'blog-first-visit',
   path: 'post/first-visit-physiotherapy', // live URL, pos 7.5, best-performing post
-  group: 'core', groupLabel: 'Blog', navActive: 'blog',
+  group: 'core', groupLabel: 'Resources', navActive: 'blog',
   crumb: 'What to expect at your first appointment', crumbParent: 'blog',
   card: { name: 'Your first visit', blurb: 'What actually happens at a first physiotherapy appointment.' },
   title: 'What to Expect at Your First Physiotherapy Appointment',
@@ -102,7 +102,7 @@ register({
 register({
   slug: 'blog-dapto-questions',
   path: 'post/dapto-physio-questions',   // live URL
-  group: 'core', groupLabel: 'Blog', navActive: 'blog',
+  group: 'core', groupLabel: 'Resources', navActive: 'blog',
   crumb: 'Your physiotherapy questions, answered', crumbParent: 'blog',
   card: { name: 'Common questions', blurb: 'The questions we are asked most often, answered honestly.' },
   title: 'Your Physiotherapy Questions, Answered | Dapto Physio',
