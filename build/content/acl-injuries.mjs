@@ -18,7 +18,7 @@ export default register({
   eyebrow: 'ACL injury &amp; reconstruction',
   h1: 'ACL rehabilitation in Dapto',
   lead:
-    'An ACL injury is a nine-to-twelve month project, not a six-week one. We take you through the whole of it: prehab, surgery or not, staged rehabilitation and <b>objective testing before you return</b>, without a weekly drive to Sydney.',
+    'ACL rehabilitation in Dapto includes preparation for reconstruction, rehabilitation after surgery and non-surgical management. We plan your exercises around knee function and your goals, with <b>testing to guide a return to sport</b>.',
   schema: {
     name: 'ACL injury and reconstruction rehabilitation',
     serviceType: 'ACL rehabilitation',
@@ -34,16 +34,16 @@ export default register({
 
   blocks: [
     { t: 'hero', img: 'assets/knee-treatment.jpg', alt: 'Physiotherapist assessing a patient&rsquo;s knee and hamstring',
-      trust: ['Prehab through to return to sport', 'Criteria-based, not calendar-based', 'Local: no Sydney commute'] },
+      trust: ['Prehab through to return to sport', 'Progress reviewed at each stage', 'Rehabilitation in Dapto'] },
     { t: 'crumbs' },
     { t: 'toc', items: [
       ['overview', 'What the ACL does'], ['signs', 'Did I tear it?'], ['surgery', 'Surgery or not'],
       ['phases', 'The rehab timeline'], ['prevention', 'Prevention'], ['faq', 'FAQs'],
     ] },
 
-    { t: 'prose', id: 'overview', eyebrow: 'The short version',
+    { t: 'prose', id: 'overview', eyebrow: 'Understanding the injury',
       h2: 'What the ACL does, and how it gets injured',
-      sub: 'The anterior cruciate ligament stops the shin bone sliding forward on the thigh bone, and controls rotation at the knee. Lose it and the knee becomes unreliable in exactly the movements sport demands.',
+      sub: 'The anterior cruciate ligament helps limit forward movement of the shin bone and controls rotation at the knee. An injury can leave the knee unstable during turning or landing, although the effect varies between people.',
       html: `
 <p>Most ACL injuries are not the result of a collision. The majority happen without contact at all: decelerating hard, landing awkwardly from a jump, or planting a foot and changing direction while the knee collapses inward. That is why they are so common in netball, football, rugby league, basketball and touch, all sports built on rapid deceleration and change of direction.</p>
 <p>The ACL rarely tears in isolation. Meniscal tears, injury to the medial collateral ligament and bone bruising commonly accompany it, and those associated injuries often influence both the surgical decision and the pace of rehabilitation. A thorough assessment establishes what else is involved rather than treating the ACL as the whole story.</p>
@@ -52,7 +52,7 @@ export default register({
 
     { t: 'prose', id: 'signs', tone: 'alt', eyebrow: 'Recognising it',
       h2: 'How do I know if I have torn my ACL?',
-      sub: 'The history is usually more informative than the examination in the first 48 hours, and far more informative than a swollen knee that will not bend.',
+      sub: 'How the injury happened helps us decide what to check. Swelling and pain can make early examination difficult, so some tests may need repeating.',
       html: `
 <p>The classic account includes a pop, heard or felt, at the moment of injury, an immediate sense that the knee gave way, rapid swelling within the first few hours, and an inability to continue playing. Rapid swelling in particular is significant: a knee that swells inside a couple of hours has usually bled into the joint, and bleeding points to a structure with a blood supply, such as the ACL.</p>
 <p>In the days that follow, people often describe the knee feeling unstable or untrustworthy on turning, or giving way on stairs or uneven ground. Some knees settle enough to walk on reasonably comfortably within a fortnight, which sometimes convinces people nothing serious happened. It is not a reliable indicator.</p>
@@ -62,23 +62,23 @@ export default register({
 
     { t: 'prose', id: 'surgery', eyebrow: 'The decision',
       h2: 'Do I need an ACL reconstruction?',
-      sub: 'Not automatically. The honest answer depends on what you want to go back to, not just on what the scan shows.',
+      sub: 'Not always. The decision depends on knee stability, associated injuries and the activities you want to return to. Discuss the options with your treating team.',
       html: `
 <p>Reconstruction is commonly recommended for people who want to return to pivoting, cutting and contact sport, and for knees that continue to give way despite good rehabilitation. It is a well-established operation with generally good outcomes, and the graft is usually taken from your own hamstring, patellar or quadriceps tendon.</p>
 <p>It is not the only path. There is a substantial body of evidence that a proportion of people manage very well without reconstruction: particularly those whose sport and work do not demand repeated pivoting, and those whose knees prove stable once strength and neuromuscular control are properly restored. Structured rehabilitation first, with the surgical decision revisited afterwards, is a legitimate and increasingly common approach.</p>
-<p>Our role is not to make that decision for you or for your surgeon. It is to make sure the decision is an informed one, to prepare the knee properly either way, and to say so plainly if we think the rehabilitation is not delivering the stability you need. <b>Conservative ACL management is a particular interest of our principal physiotherapist, <a href="team.html">Chris Vitucci</a></b>, so if you want the non-surgical option properly explored rather than waved past, you are in the right place.</p>
+<p>Our role is not to make that decision for you or for your surgeon. It is to make sure the decision is an informed one, to prepare the knee properly either way, and to say so plainly if we think the rehabilitation is not delivering the stability you need. <b>Conservative ACL management is a particular interest of our principal physiotherapist, <a href="team.html">Chris Vitucci</a></b>. We can discuss what a rehabilitation-first approach would involve.</p>
 <h3>Prehab: why the weeks before surgery matter</h3>
-<p>The state of the knee going into surgery predicts the state of the knee coming out of it. Quadriceps strength before reconstruction is one of the better predictors of function afterwards. So if surgery is planned, we use the waiting period deliberately: restore full extension and flexion, settle the swelling completely, rebuild quadriceps and hamstring strength as far as possible, and teach you the early post-operative exercises before you are sore and groggy rather than after.</p>`,
+<p>If surgery is planned, the waiting period is useful time to work on knee movement and strength. Quadriceps strength before reconstruction is associated with function afterwards. Prehab aims to reduce swelling, restore knee extension and build strength as symptoms allow. You can also learn the early post-operative exercises before the operation.</p>`,
     },
 
     { t: 'steps', id: 'phases', eyebrow: 'The long game',
-      h2: 'ACL rehabilitation, stage by stage',
-      sub: 'Roughly nine to twelve months to competitive sport. Progression is by meeting criteria, not by reaching a date on a calendar.',
+      h2: 'Rehabilitation after ACL reconstruction, stage by stage',
+      sub: 'Returning to pivoting or contact sport commonly takes nine to twelve months or longer after reconstruction. The stages overlap and depend on healing time, associated injuries and progress in testing.',
       items: [
-        { h3: 'Early recovery (0–6 weeks)', p: 'Protect the graft, eliminate swelling, restore full extension and progressively regain flexion, and wake the quadriceps up. Unglamorous, and the phase that most determines the rest.' },
+        { h3: 'Early recovery (0–6 weeks)', p: 'Protect the healing knee, manage swelling and work towards full extension and comfortable bending. Early exercises help the quadriceps start working again, within the limits of your surgical protocol.' },
         { h3: 'Strength (6 weeks–4 months)', p: 'Progressive loading of the whole leg and hip, closing the strength gap against the other side, restoring normal walking and building the base that later phases will sit on.' },
-        { h3: 'Power and landing (4–7 months)', p: 'Plyometrics, hopping, landing mechanics, deceleration and change of direction, introduced progressively once strength criteria are met. Running usually begins in this window, not before.' },
-        { h3: 'Return to sport (7–12 months)', p: 'Sport-specific loading, contact exposure where relevant, and formal testing (strength symmetry, a hop test battery, movement quality) before clearance to train fully and then to play.' },
+        { h3: 'Power and landing (4–7 months)', p: 'Build jumping, landing and change-of-direction work as strength and control improve. Running starts when the knee meets the required criteria and your treating team agrees; the timing varies.' },
+        { h3: 'Preparation for return to sport', p: 'Progress to sport-specific training and contact where relevant. Strength and hop tests, movement quality and confidence help guide decisions alongside healing time and your surgeon&rsquo;s advice.' },
       ],
     },
 
@@ -87,9 +87,9 @@ export default register({
       eyebrow: 'Prevention',
       h2: 'ACL injury prevention for Illawarra clubs and players',
       html: `
-<p>ACL injuries are, to a meaningful extent, preventable. Structured neuromuscular warm-up programs, the sort built into FIFA&rsquo;s 11+ for football and Netball Australia&rsquo;s KNEE program, combine strength, balance, landing technique and change-of-direction drills, and reduce ACL injury rates when they are performed consistently through a season. The catch is in the word consistently: they work when they replace the warm-up two or three times a week, and not when they are done for a fortnight in February.</p>
+<p>ACL injuries are, to a meaningful extent, preventable. Structured neuromuscular warm-up programs, the sort built into FIFA&rsquo;s 11+ for football and Netball Australia&rsquo;s KNEE program, combine strength, balance, landing technique and change-of-direction drills, and reduce ACL injury rates when they are performed consistently through a season. Use the chosen program regularly through the season, following its instructions on frequency and progression.</p>
 <p>For clubs and teams around Dapto and the Illawarra, we can help set that up properly: teach the program to coaches so it does not depend on a physio being present, screen players who have a previous knee injury, and build individual programs for the ones carrying the most risk.</p>
-<p>For individual athletes returning from a first ACL injury, prevention is not optional. Re-injury risk, to the same knee or the other one, is highest in the first two years, and is reduced substantially by completing rehabilitation properly and by continuing the strength and landing work after you have been cleared.</p>`,
+<p>After a first ACL injury, both knees need attention during rehabilitation. Continue strength and landing exercises as you return to training, and build exposure to the speed and contact your sport requires. Testing helps identify remaining deficits, but neither a completed program nor a test result eliminates re-injury risk.</p>`,
       list: [
         'Team warm-up programs taught to coaches, not dependent on us',
         'Pre-season screening for players with previous knee injuries',
@@ -97,37 +97,37 @@ export default register({
       ],
     },
 
-    { t: 'prose', tone: 'alt', eyebrow: 'A local angle',
+    { t: 'prose', tone: 'alt', eyebrow: 'Rehabilitation close to home',
       h2: 'Why doing ACL rehab locally matters',
       html: `
-<p>An ACL reconstruction involves the better part of a year of rehabilitation, with regular supervised sessions for much of it. The surgery itself might be a single day in Wollongong or Sydney; the rehabilitation is fifty or more appointments spread across nine to twelve months, most of them requiring equipment and supervision.</p>
-<p>That arithmetic is why doing it close to home matters. Adherence is the single biggest determinant of ACL rehabilitation outcomes, and adherence collapses when every session involves a long drive. Being ten minutes from home in Dapto, and being able to book before or after work, is not a convenience detail; it is the thing that makes the program finishable.</p>
-<p>We are happy to work alongside your surgeon&rsquo;s protocol and to report progress back to them. If you have not had your surgical consultation yet, we can get the knee into good condition in the meantime, which is time you cannot get back later.</p>`,
+<p>Rehabilitation after ACL reconstruction extends over many months. Your surgery might take place in Wollongong or Sydney, while regular rehabilitation appointments can happen closer to home in Dapto. How often you attend depends on your stage of recovery, access to equipment and how independently you can exercise.</p>
+<p>Fitting rehabilitation around work, school or family commitments can be difficult. Local appointments can reduce travel, leaving more time for the exercises between visits. We will discuss a schedule you can manage and adjust it as your knee progresses.</p>
+<p>We work alongside your surgeon&rsquo;s protocol and can report progress back with your consent. If you are waiting for a surgical consultation, assessment and suitable exercises can begin while you consider the options.</p>`,
     },
 
     { t: 'faq', h2: 'ACL rehabilitation FAQs',
       items: [
         { q: 'How long does ACL rehab take?',
-          a: 'Typically nine to twelve months before returning to pivoting or contact sport, longer for some. Walking comfortably comes back within weeks and running usually somewhere around four to six months, but the strength, power and landing work that protects the knee takes the rest of that time. Returning earlier than nine months is associated with a markedly higher re-injury rate.' },
+          a: 'After reconstruction, a return to pivoting or contact sport commonly takes nine to twelve months or longer. Running and everyday activities return at different stages. Non-surgical rehabilitation has its own progression, based on stability and your goals. Time alone does not determine readiness.' },
         { q: 'Do I definitely need surgery for a torn ACL?',
           a: 'Not necessarily. Reconstruction is commonly recommended for people returning to pivoting and contact sport, or for knees that keep giving way. A proportion of people do well without surgery, particularly if their sport and work do not demand repeated pivoting and if strength and control are properly restored. Structured rehabilitation first, with the decision revisited afterwards, is a reasonable path: the choice is made with your surgeon and you, and we make sure it is informed.' },
         { q: 'What is prehab and is it worth doing?',
-          a: 'Prehab is the rehabilitation done before surgery. It is worth doing: quadriceps strength and knee range of motion going into a reconstruction are among the better predictors of function coming out of one. We use the waiting period to eliminate swelling, restore full extension, rebuild strength and teach you the early post-operative exercises in advance.' },
+          a: 'Prehab is rehabilitation before surgery. It helps you work on knee movement and strength while waiting for reconstruction, and learn the early post-operative exercises. The program is adjusted for swelling, pain and any associated injuries.' },
         { q: 'When can I run again after an ACL reconstruction?',
-          a: 'Usually somewhere between four and six months, and it depends on meeting criteria rather than on the date: full knee extension, no swelling, adequate quadriceps strength relative to the other side, and good single-leg control. Running too early with a weak quadriceps is a reliable way to irritate the knee and slow the whole program down.' },
+          a: 'Timing varies. You need adequate healing time as well as knee extension, minimal or no swelling, sufficient quadriceps strength and control. Your physiotherapist and surgeon will advise when to begin a graded running program, taking any other repaired structures into account.' },
         { q: 'How do you decide I am ready to play again?',
-          a: 'With objective testing rather than by feel. We use strength measures compared against the uninjured side, a battery of hop tests, movement and landing quality, and progressive exposure to full training. Meeting those criteria before returning is one of the clearest modifiable factors in reducing re-injury risk.' },
+          a: 'We assess strength, hop performance, landing control and your response to increasingly demanding training. Healing time and confidence also matter. These checks guide the decision with you and your treating team; passing them cannot guarantee that the graft or the other knee will remain uninjured.' },
         { q: 'Can I claim ACL rehab on private health or WorkCover?',
-          a: 'Yes. Physiotherapy is claimable on most private health extras cover, subject to your policy limits. If the injury happened at work it is generally covered by the workers compensation scheme instead. See our WorkCover page. Our fees and rebates page explains the options.' },
+          a: 'Private health extras may cover physiotherapy, subject to your policy. WorkCover may fund treatment for an eligible work injury, depending on claim and treatment approval. See <a href="workcover.html">WorkCover physiotherapy</a> and <a href="fees-and-rebates.html">fees and rebates</a>.' },
       ],
     },
 
     { t: 'related', h2: 'Related pages',
-      sub: 'Knee injuries rarely arrive alone. These are the pages most often read alongside this one.',
+      sub: 'Further information on sports rehabilitation, running and treatment costs.',
       items: ['sports-injury', 'running-injuries', 'fees-and-rebates'] },
 
-    { t: 'final', h2: 'Start the knee off right.',
-      p: 'Whether you are two days post-injury or two weeks post-surgery, book an assessment and get a plan for the whole journey.',
+    { t: 'final', h2: 'Planning your ACL rehabilitation?',
+      p: 'Book an assessment to discuss your knee, treatment options and the next stage of rehabilitation.',
       cta: 'Book an appointment' },
   ],
 });
