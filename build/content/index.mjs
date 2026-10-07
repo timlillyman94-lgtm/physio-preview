@@ -16,7 +16,7 @@ export default register({
     '<b>Your health, our commitment.</b> Evidence-based, one-on-one physiotherapy in Dapto: helping people across the Illawarra recover from injury, manage pain and get moving again.',
 
   blocks: [
-    { t: 'hero', img: 'assets/home-sign.avif', alt: 'Close-up of the Functional Physiotherapy sign',
+    { t: 'hero', img: 'assets/home-treatment.webp', alt: 'Physiotherapist performing dry needling on a patient’s leg',
       trust: ['One-on-one, every session', 'Registered physiotherapists', 'HICAPS, WorkCover &amp; NDIS'] },
 
     { t: 'svcgrid', id: 'services', mid: true, eyebrow: 'What we treat',

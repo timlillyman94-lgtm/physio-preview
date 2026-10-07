@@ -367,3 +367,6 @@ details .a{padding:0 40px 24px 0;color:var(--soft);font-size:.97rem;line-height:
 }
 :root[data-theme="dark"] .fbrand .wm.light{display:none}
 :root[data-theme="dark"] .fbrand .wm.dark{display:block}
+
+/* Preserve the full portrait photograph selected for the homepage. */
+.hero-home .hero-img{aspect-ratio:889/1092}
