@@ -12,11 +12,10 @@ export default register({
   card: { name: 'Our team', blurb: 'Meet the physiotherapists treating you in Dapto.' },
   title: 'Meet Your Dapto Physio Team | Functional Physiotherapy',
   metaDesc:
-    'Meet Chris Vitucci and the team at Functional Physiotherapy in Dapto NSW. Masters-qualified, 8 years clinical experience, one-on-one care built around your goals.',
+    'Meet Chris Vitucci and the team at Functional Physiotherapy in Dapto NSW. Masters-qualified, over 8 years of clinical experience and one-on-one care.',
   eyebrow: 'Our team',
   h1: 'The people treating you',
-  lead:
-    'Functional Physiotherapy is led by <b>Chris Vitucci</b>, a masters-qualified physiotherapist with eight years of clinical experience.',
+  lead: '',
 
   people: [{
     id: 'chris-vitucci',
@@ -30,26 +29,30 @@ export default register({
       'TMJ and jaw pain', 'Sports physiotherapy', 'Aged care physiotherapy',
     ],
     schemaBio:
-      'Director and Principal Physiotherapist at Functional Physiotherapy, Dapto NSW. Bachelor of Exercise Science (University of Wollongong) and Master of Physiotherapy (University of Technology Sydney), with eight years of clinical experience across private practice, sporting teams, aged care and disability services. Founded Functional Physiotherapy in 2022. Has completed three advanced GEMt dry needling courses and assists in teaching the technique to other health practitioners.',
+      'Director and Principal Physiotherapist at Functional Physiotherapy, Dapto NSW. Bachelor of Exercise Science (University of Wollongong) and Master of Physiotherapy (University of Technology Sydney), with more than eight years of clinical experience across private practice, sporting teams, aged care and disability services. Founded Functional Physiotherapy in 2022. Has completed three advanced GEMt dry needling courses and assists in teaching the technique to other health practitioners.',
   }],
 
   blocks: [
     { t: 'phero' },
     { t: 'crumbs' },
 
-    { t: 'split', img: 'assets/chris-portrait.jpg', alt: 'Chris Vitucci, Director and Principal Physiotherapist',
+    { t: 'split', id: 'chris-bio', alignTop: true, img: 'assets/chris-portrait.jpg', alt: 'Chris Vitucci, Director and Principal Physiotherapist',
       eyebrow: 'Director &amp; Principal Physiotherapist',
       h2: 'Chris Vitucci',
       html: `
-<p>Chris holds a <b>Bachelor of Exercise Science</b> from the University of Wollongong and a <b>Master of Physiotherapy</b> from UTS, and has eight years of clinical experience behind him. He has worked with athletes and sporting teams, in aged care, and with people living with disability.</p>
+<p>Chris holds a <b>Bachelor of Exercise Science</b> from the University of Wollongong and a <b>Master of Physiotherapy</b> from UTS, and has more than eight years of clinical experience behind him. He has worked with athletes and sporting teams, in aged care, and with people living with disability.</p>
 <p>He founded Functional Physiotherapy in 2022, originally in his home town of <b>Griffith, NSW</b>. The practice now operates from Dapto, inside Dapto Medical Professionals on the Princes Highway.</p>
-<p>Chris takes a performance-based approach and is a result-driven therapist who keeps looking for the optimal outcome rather than settling for a plateau. The aim is to empower you to always improve your health, function and capacity. Chris is known for his gentle, easy-going nature, strong client rapport, and his can-do attitude.</p>`,
+<p>Chris takes a performance-based approach to help people improve their health, function and capacity for day-to-day life or competitive sport.</p>
+<p>He takes a conservative approach to injury management, looking to avoid or limit invasive treatment options where appropriate. His work includes spinal and joint-related problems, headaches, vertigo, TMJ dysfunction, strength and conditioning, and pre- and post-operative care.</p>
+<p>His treatment techniques include advanced dry needling, joint mobilisation and exercise therapy. He has a special interest in dry needling and non-operative ACL rehabilitation.</p>
+<p>Outside of work, you can find Chris hanging out with friends and family, playing soccer or having a hit of golf.</p>`,
       list: [
-        'B. Exercise Science, <b>University of Wollongong</b>',
-        'Master of Physiotherapy, <b>UTS</b>',
-        '<b>8 years</b> of clinical experience',
-        'Experience with athletes, sporting teams, aged care and disability services',
-        'Founded Functional Physiotherapy in <b>2022</b>',
+        'B. Exercise Science &amp; Master of Physiotherapy',
+        'GEMT advanced dry needling trained',
+        'Vestibular physiotherapist',
+        'TMJ physiotherapy trained',
+        'Trained in whiplash management',
+        'APA member',
       ] },
 
     { t: 'cards', tone: 'alt', eyebrow: 'Special interests', h2: 'What Chris works on most',
@@ -62,24 +65,17 @@ export default register({
         { h3: 'Running injuries', p: 'Diagnosing what the tissue was not ready for, and building runners back up without taking their running away entirely.',
           href: 'running-injuries.html', link: 'Running injuries' },
         { h3: 'Chronic conditions', p: 'Persistent and long-standing pain, where progress is measured in months and honesty about timeframes matters more than optimism.',
-          href: 'services.html', link: 'All services' },
+          href: 'services.html#additional-conditions', link: 'Chronic pain physiotherapy' },
         { h3: 'Vertigo &amp; dizziness', p: 'Positional vertigo, BPPV and balance problems, frequently resolved in one or two sessions once correctly identified.',
           href: 'vertigo-headaches.html', link: 'Vertigo &amp; headaches' },
         { h3: 'TMJ &amp; jaw pain', p: 'Jaw pain, clicking and restricted opening, and the neck and headache problems that so often travel with them.',
-          href: 'services.html', link: 'Get in touch' },
+          href: 'services.html#additional-conditions', link: 'TMJ physiotherapy' },
       ] },
 
-    { t: 'bios', eyebrow: 'Careers', h2: 'Growing our team',
-      sub: 'We&rsquo;re looking for physiotherapists to join Functional Physiotherapy in Dapto. If you&rsquo;re interested in working with us, visit our careers page to find out more.',
-      /* The two "[Physiotherapist name]" scaffold cards and the reviewer note were removed
-         09-22 (Tim): bracketed placeholder copy addressed to us, rendered on a page Chris
-         is about to read. The "Join us" card stays, and is now the only inbound link to
-         careers.html since the homepage careers block was removed, so QA's orphan check
-         depends on it. P0-15 (confirm the portrait is Chris) is still open on the tracker. */
-      items: [
-        { name: 'Join us', role: 'Physiotherapists', img: 'assets/desk-notes.jpg', alt: 'Physiotherapist writing up notes at the clinic desk',
-          bio: 'We would like to hear from physiotherapists who want a one-on-one caseload and real appointment lengths. <a href="careers.html">Explore career opportunities &rarr;</a>' },
-      ] },
+    { t: 'prose', id: 'careers', eyebrow: 'Careers', h2: 'Growing our team',
+      html: `
+<p>We&rsquo;re looking for physiotherapists to join Functional Physiotherapy in Dapto. If you&rsquo;re interested in working with us, visit our careers page to find out more.</p>
+<p><a class="btn btn-line" href="careers.html">Explore career opportunities</a></p>` },
 
     { t: 'split', tone: 'fresh', flip: true, img: 'assets/calf-treatment.jpg', alt: 'Physiotherapist treating a patient&rsquo;s calf',
       eyebrow: 'Our approach',
@@ -93,20 +89,6 @@ export default register({
         'Inside <b><a href="contact.html">Dapto Medical Professionals</a></b>, with on-site parking',
         '<b>Home visits</b> available across the Illawarra',
       ] },
-
-    { t: 'stats', items: [
-      { n: '8', l: 'years clinical experience' },
-      { n: '1:1', l: 'every session, every time' },
-      { n: '2022', l: 'Functional Physiotherapy founded' },
-      { n: 'Mon–Fri', l: '8:00am – 5:30pm' },
-    ] },
-
-    { t: 'split', tone: 'alt', img: 'assets/desk-notes.jpg', alt: 'Physiotherapist writing up notes at the clinic desk',
-      eyebrow: 'Join us',
-      h2: 'We are looking for physiotherapists',
-      html: `
-<p>The clinic is growing, and we would like to hear from physiotherapists who want to practise properly: real appointment lengths, a one-on-one caseload, and support to build a special interest.</p>
-<p><a class="btn btn-line" href="careers.html">Careers at Functional Physiotherapy</a></p>` },
 
     { t: 'final', h2: 'Come and see us',
       p: 'Book an appointment online, or call the clinic and we will help you get started.',

@@ -77,11 +77,11 @@ const green = files.concat(['styles.css']).filter(f => /#0?[0-9a-f]?7[0-9a-f]a[0
 say(green.length === 0, `no green accent remains ${green.join(', ')}`);
 
 // 11. every service page has FAQPage + Service schema
-const svc = ['workcover','ndis','dry-needling','sports-injury','neck-back-pain','vertigo-headaches','acl-injuries','running-injuries'];
+const svc = ['general-physiotherapy','workcover','ndis','dry-needling','sports-injury','neck-back-pain','vertigo-headaches','acl-injuries','running-injuries'];
 const noFaq = svc.filter(s => !readFileSync(s + '.html', 'utf8').includes('"FAQPage"'));
 const noSvc = svc.filter(s => !readFileSync(s + '.html', 'utf8').includes('"@type": "Service"'));
-say(noFaq.length === 0, `FAQPage schema on all 8 service pages ${noFaq.join(', ')}`);
-say(noSvc.length === 0, `Service schema on all 8 service pages ${noSvc.join(', ')}`);
+say(noFaq.length === 0, `FAQPage schema on all ${svc.length} service pages ${noFaq.join(', ')}`);
+say(noSvc.length === 0, `Service schema on all ${svc.length} service pages ${noSvc.join(', ')}`);
 
 // 12. every service page has >=4 FAQ questions
 const fewFaq = svc.filter(s => (readFileSync(s + '.html','utf8').match(/<details/g)||[]).length < 4);

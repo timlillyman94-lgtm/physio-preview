@@ -91,8 +91,7 @@ register({
 <li>Any relevant scans, referrals or specialist reports</li>
 <li>For <a href="workcover.html">WorkCover</a> or <a href="ndis.html">NDIS</a>, your claim number or plan details</li>
 <li>Your private health card or Medicare referral if you are claiming. See <a href="fees-and-rebates.html">fees and rebates</a></li>
-</ul>
-<p>Allow about 45 minutes. No mystery, just a proper assessment and a plan built around you.</p>` },
+</ul>` },
     { t: 'final', h2: 'Ready for your first visit?',
       p: 'Book online in under a minute, or call the clinic and we will find a time that suits.',
       cta: 'Book an appointment' },

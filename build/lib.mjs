@@ -114,7 +114,7 @@ function header(p) {
 
 function footer() {
   const cols = [
-    ['Services', [['sports-injury', 'Sports injury &amp; rehab'], ['dry-needling', 'Dry needling'],
+    ['Services', [['general-physiotherapy', 'General physiotherapy'], ['sports-injury', 'Sports injury &amp; rehab'], ['dry-needling', 'Dry needling'],
       ['acl-injuries', 'ACL injuries'], ['running-injuries', 'Running injuries']]],
     ['Conditions', [['neck-back-pain', 'Neck &amp; back pain'], ['vertigo-headaches', 'Headaches &amp; vertigo'],
       ['services', 'All services']]],
@@ -288,7 +288,7 @@ const R = {
   hero(b, p) {
     const trust = (b.trust || []).map((t) => `<span class="t">${TICK} ${t}</span>`).join('');
     return `
-<section class="hero"><div class="wrap">
+<section class="hero${p.slug === 'index' ? ' hero-home' : ''}"><div class="wrap">
   <div>
     <span class="eyebrow">${p.eyebrow}</span>
     <h1${b.small ? ' class="h1-sm"' : ''}>${p.h1}</h1>
@@ -305,7 +305,7 @@ const R = {
 <section class="phero"><div class="wrap">
   <span class="eyebrow">${p.eyebrow}</span>
   <h1>${p.h1}</h1>
-  <p class="lead">${p.lead}</p>
+${p.lead ? `  <p class="lead">${p.lead}</p>` : ''}
   ${b.cta === false ? '' : ctaPair()}
 </div></section>`;
   },
@@ -349,7 +349,7 @@ const R = {
     const body = `<div><span class="eyebrow">${b.eyebrow}</span><h2 class="h2-lg">${b.h2}</h2>` +
       `<div class="prose">${b.html}</div>${b.list ? tickList(b.list) : ''}${b.cta ? ctaPair(b.cta) : ''}</div>`;
     return section(b.tone || 'fresh',
-      `<div class="split"${b.id ? ` id="${b.id}"` : ''}>${b.flip ? body + art : art + body}</div>`);
+      `<div class="split${b.alignTop ? ' split-top' : ''}"${b.id ? ` id="${b.id}"` : ''}>${b.flip ? body + art : art + body}</div>`);
   },
 
   cards(b) {

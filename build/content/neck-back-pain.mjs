@@ -10,7 +10,7 @@ export default register({
   order: 1,
   card: {
     name: 'Neck &amp; back pain',
-    blurb: 'Hands-on treatment and targeted exercise for back pain, neck pain and sciatica.',
+    blurb: 'Hands-on treatment and targeted exercise for back and neck pain.',
   },
   title: 'Back &amp; Neck Pain Physio Dapto | Sciatica Treatment',
   metaDesc:

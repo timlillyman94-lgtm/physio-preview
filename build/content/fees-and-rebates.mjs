@@ -33,7 +33,7 @@ export default register({
 
     { t: 'note', tone: 'alt', html:
       '<b>Draft page, consultation fees still to be confirmed.</b> The dollar figures in the table below are placeholders ' +
-      'pending confirmation from the clinic. DVA, cancellation terms and the marked NDIS arrangements also need confirmation. HICAPS and health-fund acceptance are confirmed.' },
+      'pending confirmation from the clinic. Cancellation terms and the marked NDIS arrangements also need confirmation. HICAPS and health-fund acceptance are confirmed.' },
 
     { t: 'table', id: 'fees', eyebrow: 'What it costs', h2: 'Appointment fees',
       sub: 'One-on-one appointments with a physiotherapist. <b>HICAPS is available on site</b>, for eligible private health extras claims. Your rebate depends on your cover.',
@@ -90,7 +90,7 @@ export default register({
 <p>The Medicare benefit is a set rebate rather than the full fee, so there is normally a gap for you to pay. You need a valid referral before the appointment; it cannot be arranged retrospectively. Bring the referral and your Medicare card to your first visit.</p>
 <p>Check your eligibility and remaining services before booking, including visits used for other eligible allied health care. GP Management Plans and Team Care Arrangements made before 1 July 2025 can continue supporting eligible services until 30 June 2027. Your plan and referral must meet the applicable requirements. <a href="https://www.servicesaustralia.gov.au/services-available-under-gp-chronic-condition-management-plan?context=20" target="_blank" rel="noopener">Services Australia explains the current rules</a>.</p>
 <h3>What about DVA?</h3>
-<p class="ph"><b>[To confirm]</b> Whether the clinic treats DVA Gold and White Card holders and holds the relevant provider arrangements. Please call the clinic to check.</p>`,
+<p>Yes. We accept DVA Gold and White Card holders for eligible physiotherapy. Bring your Veteran Card and a valid referral. White Card funding applies to accepted conditions. We will check your eligibility before treatment. <a href="https://www.dva.gov.au/what-we-help-with/health-support/allied-health/physiotherapy-services" target="_blank" rel="noopener">Read DVA&rsquo;s physiotherapy guidance</a>.</p>`,
     },
 
     { t: 'prose', tone: 'alt', eyebrow: 'Practicalities',

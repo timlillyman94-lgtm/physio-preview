@@ -10,7 +10,7 @@ export default register({
   order: 2,
   card: {
     name: 'Headaches, vertigo &amp; dizziness',
-    blurb: 'Vestibular physiotherapy for BPPV and balance, plus treatment for neck-related headaches.',
+    blurb: 'Vestibular physiotherapy for BPPV and balance disorders, plus treatment for neck-related headaches.',
   },
   title: 'Vestibular Physiotherapy Dapto | Vertigo &amp; Headache Treatment',
   metaDesc:
