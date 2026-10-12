@@ -11,7 +11,7 @@ export default register({
   },
   title: 'Physiotherapy Services in Dapto | Functional Physiotherapy',
   metaDesc:
-    'Physiotherapy services in Dapto NSW: sports injury, dry needling, ACL and running injuries, back and neck pain, vertigo, WorkCover and NDIS.',
+    'Physiotherapy in Dapto for sports injuries, jaw pain, chronic pain, shoulder, knee, hip and ankle problems. Explore services, conditions and funding options.',
   eyebrow: 'What we treat',
   h1: 'Physiotherapy services in Dapto',
   lead: '',
@@ -26,6 +26,7 @@ export default register({
       'Strengthening and conditioning', 'General conditioning and falls prevention',
       'Pre- and post-operative rehabilitation', 'Telehealth consultations', 'Home visits',
       'TMJ and jaw pain physiotherapy', 'Chronic pain physiotherapy',
+      'Shoulder pain physiotherapy', 'Knee pain physiotherapy', 'Hip and groin physiotherapy', 'Foot and ankle physiotherapy',
     ],
   },
 
@@ -45,29 +46,6 @@ export default register({
         { h3: 'Telehealth consultations', p: 'Physiotherapy appointments by video for advice, exercise guidance and review when a remote appointment is appropriate.', href: 'contact.html', link: 'Ask about telehealth' },
         { h3: 'Home visits', p: 'Physiotherapy at home for people who have difficulty attending the clinic. Contact us to check availability in your area.', href: 'contact.html', link: 'Arrange a home visit' },
       ] },
-
-    { t: 'svcgrid', tone: 'alt', id: 'conditions', h2: 'Conditions we treat',
-      sub: 'Back and neck pain, sciatica, dizziness, vertigo and headaches.',
-      items: ['neck-back-pain', 'vertigo-headaches'] },
-
-    { t: 'cards', tone: 'alt', id: 'additional-conditions', h2: 'TMJ and chronic pain',
-      items: [
-        { h3: 'TMJ &amp; jaw pain', p: 'Assessment and physiotherapy for jaw pain, clicking or restricted jaw movement.' },
-        { h3: 'Chronic pain', p: 'Physiotherapy for persistent pain, with advice and exercises based on your symptoms, daily activities and goals.' },
-      ] },
-
-    { t: 'prose', tone: 'alt', id: 'injury-directory', eyebrow: 'Find your concern',
-      h2: 'Injuries and conditions covered by our services',
-      html: `
-<ul>
-<li><a href="neck-back-pain.html">Back and neck pain, including sciatica</a>.</li>
-<li><a href="vertigo-headaches.html">Headaches, dizziness, vertigo, BPPV and balance disorders</a>.</li>
-<li><a href="sports-injury.html">Muscle strains, ligament sprains, shoulder injuries, knee and meniscus injuries, and tendon problems</a>.</li>
-<li><a href="acl-injuries.html">ACL injuries and rehabilitation after ACL reconstruction</a>.</li>
-<li><a href="running-injuries.html">Running injuries, including shin splints, runner&rsquo;s knee, Achilles pain and plantar heel pain</a>.</li>
-<li><a href="#additional-conditions">TMJ and jaw pain, and chronic pain</a>.</li>
-<li><a href="workcover.html">Work-related injuries</a>.</li>
-</ul>` },
 
     { t: 'svcgrid', id: 'funding', h2: 'Funding pathways',
       sub: 'How your treatment is paid for. If you are not sure which applies to you, call the clinic and we will work it out before you book.',
@@ -89,6 +67,25 @@ export default register({
 
     { t: 'suburbs', eyebrow: 'Where we work', h2: 'Serving Dapto and the Illawarra',
       sub: 'Based in Dapto, treating patients from right across the region.' },
+
+    { t: 'prose', tone: 'alt', id: 'conditions', eyebrow: 'Find your concern',
+      h2: 'Conditions we treat',
+      html: `
+<p id="injury-directory">Choose a condition or injury to read about assessment, treatment and rehabilitation.</p>
+<ul>
+<li><a href="neck-back-pain.html">Back and neck pain, including sciatica</a>.</li>
+<li><a href="vertigo-headaches.html">Headaches, dizziness, vertigo, BPPV and balance disorders</a>.</li>
+<li id="additional-conditions"><a href="tmj-jaw-pain.html">TMJ and jaw pain</a>.</li>
+<li><a href="chronic-pain.html">Persistent and chronic pain</a>.</li>
+<li><a href="shoulder-pain.html">Shoulder pain and injuries</a>.</li>
+<li><a href="knee-pain.html">Knee pain and meniscus injuries</a>.</li>
+<li><a href="hip-groin-pain.html">Hip and groin pain</a>.</li>
+<li><a href="foot-ankle-pain.html">Foot and ankle pain, including ankle sprains and plantar heel pain</a>.</li>
+<li><a href="sports-injury.html">Sports injuries, including muscle strains, ligament sprains and tendon problems</a>.</li>
+<li><a href="acl-injuries.html">ACL injuries and rehabilitation after ACL reconstruction</a>.</li>
+<li><a href="running-injuries.html">Running injuries, including shin splints, runner&rsquo;s knee and Achilles pain</a>.</li>
+<li><a href="workcover.html">Work-related injuries</a>.</li>
+</ul>` },
 
     { t: 'final', h2: 'Not sure which one you need?',
       p: 'Call us and we will point you to the right place, or book an assessment and we will work it out in person.',

@@ -19,17 +19,11 @@ export default register({
     { t: 'hero', img: 'assets/home-treatment.webp', alt: 'Physiotherapist performing dry needling on a patient’s leg',
       trust: ['One-on-one, every session', 'Registered physiotherapists', 'HICAPS, WorkCover &amp; NDIS'] },
 
-    { t: 'svcgrid', id: 'services', mid: true, eyebrow: 'What we treat',
-      h2: 'Physiotherapy services in Dapto',
-      sub: 'Individualised physiotherapy for pain, injury, rehabilitation and performance',
-      items: ['general-physiotherapy', 'sports-injury', 'neck-back-pain', 'dry-needling', 'workcover', 'ndis', 'vertigo-headaches'],
-      all: true },
-
-    { t: 'split', tone: 'fresh', img: 'assets/neck-supine.jpg', alt: 'Physiotherapist treating a patient&rsquo;s neck during a one-on-one appointment',
+    { t: 'split', id: 'approach', tone: 'fresh', img: 'assets/neck-supine.jpg', alt: 'Physiotherapist treating a patient&rsquo;s neck during a one-on-one appointment',
       eyebrow: 'Our approach',
       h2: 'The Functional Physiotherapy approach',
       html: `
-<p>We start by understanding what’s causing your problem, explain it clearly, and build a plan around you. Through hands-on treatment, targeted rehabilitation and practical advice, we help you move better, feel stronger and get back to what matters.</p>
+<p>Helping you reduce pain, move better and get back to doing what you love.</p>
 <p>Every appointment is one-on-one with your physiotherapist. You get a real explanation of what is going on, treatment on the day, and a plan you can actually follow, not a printout and a rebooking.</p>`,
       list: [
         'Treatment plans built around your goals, not a template',
@@ -38,6 +32,25 @@ export default register({
         'Private, <a href="workcover.html">WorkCover</a>, <a href="ndis.html">NDIS</a> and Medicare-referred patients welcome',
       ],
       cta: 'Book your first visit' },
+
+    { t: 'svcgrid', id: 'services', mid: true, eyebrow: 'What we treat',
+      h2: 'Physiotherapy services in Dapto',
+      sub: 'Individualised physiotherapy for pain, injury, rehabilitation and performance',
+      items: ['general-physiotherapy', 'sports-injury', 'running-injuries', 'acl-injuries', 'neck-back-pain', 'dry-needling', 'workcover', 'ndis', 'vertigo-headaches'],
+      all: true },
+
+    { t: 'prose', id: 'more-services', h2: 'More services and conditions',
+      html: `
+<ul>
+<li><a href="services.html#additional-services">Strengthening and conditioning</a>.</li>
+<li><a href="services.html#additional-services">General conditioning and falls prevention</a>.</li>
+<li><a href="services.html#additional-services">Pre- and post-operative rehabilitation</a>.</li>
+<li><a href="services.html#additional-services">Telehealth consultations</a> and <a href="services.html#additional-services">home visits</a>.</li>
+<li><a href="tmj-jaw-pain.html">TMJ and jaw pain</a>.</li>
+<li><a href="chronic-pain.html">Persistent and chronic pain</a>.</li>
+<li><a href="shoulder-pain.html">Shoulder pain</a>, <a href="knee-pain.html">knee pain</a>, <a href="hip-groin-pain.html">hip and groin pain</a>, and <a href="foot-ankle-pain.html">foot and ankle pain</a>.</li>
+</ul>
+<p>For private health, Medicare and DVA information, see <a href="fees-and-rebates.html">fees and rebates</a>.</p>` },
 
     { t: 'cards', tone: '', eyebrow: 'Getting started', h2: 'Three things people ask before booking',
       items: [

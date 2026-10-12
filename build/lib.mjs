@@ -116,7 +116,7 @@ function footer() {
   const cols = [
     ['Services', [['general-physiotherapy', 'General physiotherapy'], ['sports-injury', 'Sports injury &amp; rehab'], ['dry-needling', 'Dry needling'],
       ['acl-injuries', 'ACL injuries'], ['running-injuries', 'Running injuries']]],
-    ['Conditions', [['neck-back-pain', 'Neck &amp; back pain'], ['vertigo-headaches', 'Headaches &amp; vertigo'],
+    ['Conditions', [['tmj-jaw-pain', 'TMJ &amp; jaw pain'], ['chronic-pain', 'Persistent pain'], ['neck-back-pain', 'Neck &amp; back pain'], ['vertigo-headaches', 'Headaches &amp; vertigo'],
       ['services', 'All services']]],
     ['Funding', [['workcover', 'WorkCover'], ['ndis', 'NDIS'], ['fees-and-rebates', 'Fees &amp; rebates']]],
     ['Clinic', [['team', 'Our team'], ['careers', 'Careers'], ['blog', 'Resources'], ['contact', 'Contact']]],

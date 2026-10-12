@@ -35,7 +35,7 @@ export default register({
       html: `
 <p>You can see us for an injury that happened recently, pain that has developed gradually, or a problem that keeps returning. General physiotherapy covers concerns from everyday activities as well as work, exercise and sport.</p>
 <ul>
-<li><b>Joints:</b> pain, stiffness and reduced movement in areas such as the shoulder, elbow, wrist, hip, knee or ankle.</li>
+<li><b>Joints:</b> pain, stiffness and reduced movement. Read more about <a href="shoulder-pain.html">shoulder pain</a>, <a href="knee-pain.html">knee pain</a>, <a href="hip-groin-pain.html">hip and groin pain</a>, or <a href="foot-ankle-pain.html">foot and ankle problems</a>. We also assess elbow and wrist symptoms.</li>
 <li><b>Muscles:</b> strains, soreness and weakness following injury or a period of reduced activity.</li>
 <li><b>Tendons:</b> pain associated with loading or repeated movement, including Achilles, patellar and shoulder tendon problems.</li>
 <li><b>Nerves:</b> symptoms such as pain, tingling or numbness that need assessment to understand their cause. Our <a href="neck-back-pain.html">neck and back pain page</a> includes information about sciatica.</li>

@@ -65,11 +65,11 @@ export default register({
         { h3: 'Running injuries', p: 'Diagnosing what the tissue was not ready for, and building runners back up without taking their running away entirely.',
           href: 'running-injuries.html', link: 'Running injuries' },
         { h3: 'Chronic conditions', p: 'Persistent and long-standing pain, where progress is measured in months and honesty about timeframes matters more than optimism.',
-          href: 'services.html#additional-conditions', link: 'Chronic pain physiotherapy' },
+          href: 'chronic-pain.html', link: 'Chronic pain physiotherapy' },
         { h3: 'Vertigo &amp; dizziness', p: 'Positional vertigo, BPPV and balance problems, frequently resolved in one or two sessions once correctly identified.',
           href: 'vertigo-headaches.html', link: 'Vertigo &amp; headaches' },
         { h3: 'TMJ &amp; jaw pain', p: 'Jaw pain, clicking and restricted opening, and the neck and headache problems that so often travel with them.',
-          href: 'services.html#additional-conditions', link: 'TMJ physiotherapy' },
+          href: 'tmj-jaw-pain.html', link: 'TMJ physiotherapy' },
       ] },
 
     { t: 'prose', id: 'careers', eyebrow: 'Careers', h2: 'Growing our team',
