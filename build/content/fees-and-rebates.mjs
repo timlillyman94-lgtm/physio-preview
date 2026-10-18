@@ -10,7 +10,7 @@ export default register({
   order: 3,
   card: {
     name: 'Fees &amp; rebates',
-    blurb: 'What an appointment costs, and every way it can be funded: private health, Medicare, WorkCover, NDIS.',
+    blurb: 'Ask about appointment fees and read how private health, Medicare, WorkCover and NDIS funding works.',
   },
   title: 'Physio Fees &amp; Rebates Dapto | Private Health &amp; Medicare',
   metaDesc:
@@ -18,7 +18,7 @@ export default register({
   eyebrow: 'Fees &amp; rebates',
   h1: 'Physiotherapy fees and rebates in Dapto',
   lead:
-    '<b>HICAPS is on site and we accept all health funds.</b> Eligible extras claims can be processed at your appointment. Check the fees below and read how Medicare, WorkCover and NDIS billing works.',
+    '<b>HICAPS is on site and we accept all health funds.</b> Eligible extras claims can be processed at your appointment. Contact the clinic for current fees and read how Medicare, WorkCover and NDIS billing works.',
   schema: {
     name: 'Physiotherapy fees and funding options',
     serviceType: 'Physiotherapy',
@@ -31,22 +31,10 @@ export default register({
     { t: 'phero' },
     { t: 'crumbs' },
 
-    { t: 'note', tone: 'alt', html:
-      '<b>Draft page, consultation fees still to be confirmed.</b> The dollar figures in the table below are placeholders ' +
-      'pending confirmation from the clinic. Cancellation terms and the marked NDIS arrangements also need confirmation. HICAPS and health-fund acceptance are confirmed.' },
-
-    { t: 'table', id: 'fees', eyebrow: 'What it costs', h2: 'Appointment fees',
-      sub: 'One-on-one appointments with a physiotherapist. <b>HICAPS is available on site</b>, for eligible private health extras claims. Your rebate depends on your cover.',
-      cols: ['Appointment', 'Length', 'Fee'],
-      rows: [
-        ['Initial consultation', 'approx. 45 min', '$[TBC]'],
-        ['Standard follow-up', 'approx. 30 min', '$[TBC]'],
-        ['Extended consultation', 'approx. 45 min', '$[TBC]'],
-        ['Home visit', 'by arrangement', '$[TBC]'],
-        ['Telehealth consultation', 'approx. 30 min', '$[TBC]'],
-      ],
-      note: 'Dry needling, manual therapy and exercise prescription are included within a consultation rather than charged separately. ' +
-        'WorkCover billing follows the applicable SIRA fee rules. NDIS fees are agreed before treatment under the pricing rules that apply to your funding. NDIS consultation rates, travel and report charges: [TBC].' },
+    { t: 'prose', id: 'fees', eyebrow: 'Appointment fees', h2: 'Ask about fees before you book',
+      html: `<p>For current consultation fees, <a href="tel:0242219637">call (02) 4221 9637</a> or <a href="contact.html">contact the clinic</a>. Let us know whether you need a clinic appointment, telehealth consultation or home visit, and whether you plan to use private health insurance or other funding.</p>
+<p>HICAPS is available on site for eligible private health extras claims. Your rebate depends on your cover.</p>`,
+    },
 
     { t: 'cards', h2: 'Ways to pay for physiotherapy',
       eyebrow: 'Funding options',
@@ -62,13 +50,10 @@ export default register({
           p: 'For treatment covered by your workers compensation claim, we bill your insurer directly under the applicable SIRA fee rules. We check cover before confirming payment arrangements.',
           href: 'workcover.html', link: 'WorkCover physiotherapy' },
         { h3: 'NDIS', sub: 'Participants',
-          p: 'Your plan may include disability-related physiotherapy under Capacity Building: Improved Daily Living. Check eligible supports and billing before booking. Agency-managed appointments: [TBC pending registration confirmation].',
+          p: 'Your plan may include disability-related physiotherapy under Capacity Building: Improved Daily Living. Check eligible supports and billing before booking.',
           href: 'ndis.html', link: 'NDIS physiotherapy' },
         { h3: 'Private, no cover', sub: 'Straightforward',
           p: 'You do not need insurance, a referral or a plan to see a physiotherapist. Book, pay the consultation fee on the day, and keep the receipt for your records.',
-          href: null },
-        { h3: 'Third party / CTP', sub: 'To be confirmed',
-          p: 'Motor accident and other third-party claims are handled differently again. We are confirming the detail. Call the clinic in the meantime and we will tell you where you stand.',
           href: null },
       ] },
 
@@ -97,14 +82,14 @@ export default register({
       h2: 'Cancellations, payment and what to bring',
       html: `
 <p><b>Payment.</b> Payment is made at the end of your appointment. We accept card payments at the clinic.</p>
-<p><b>Cancellations.</b> If you need to change or cancel an appointment, please give us as much notice as you can: appointment times are held one-to-one, and late notice usually means the slot goes unused when someone else was waiting for it. <span class="ph">[Cancellation policy and any associated fee to be confirmed.]</span></p>
+<p><b>Cancellations.</b> Please contact the clinic as soon as possible if you need to change or cancel an appointment.</p>
 <p><b>What to bring.</b> Comfortable clothing you can move in, and anything relevant to how you are paying: your private health card, a Medicare referral and card, your claim number and insurer details for WorkCover, or relevant NDIS goals, funding details and your plan manager&rsquo;s contact details. Bring any recent scans or medical letters relevant to your symptoms.</p>`,
     },
 
     { t: 'faq', h2: 'Fees and rebates FAQs',
       items: [
         { q: 'How much does a physio appointment cost in Dapto?',
-          a: 'Initial consultation: $[TBC]. Standard follow-up: $[TBC]. These fees are awaiting confirmation; call the clinic for a quote before booking. Dry needling and manual therapy are included when used during your consultation. See the <a href="#fees">fee table</a> for other appointment types.' },
+          a: 'For current fees, <a href="tel:0242219637">call (02) 4221 9637</a> before booking. Tell us which type of appointment you need and whether you have private health cover, a Medicare referral or other funding so we can explain the relevant costs.' },
         { q: 'Do I need a referral to see a physiotherapist?',
           a: 'You can book directly as a private patient without a referral. Medicare-funded appointments need a valid referral under the relevant programme. Other funding arrangements may need claim or plan details, so check with us before attending.' },
         { q: 'Does Medicare cover physiotherapy?',

@@ -33,7 +33,7 @@ export default register({
 
   blocks: [
     { t: 'hero', img: 'assets/leg-raise.jpg', alt: 'Physiotherapist supporting a client through a leg movement',
-      trust: ['Agency-managed access: [TBC]', 'Home visits across the Illawarra', 'Reports for your plan review'] },
+      trust: ['Home visits across the Illawarra', 'Reports for your plan review'] },
     { t: 'crumbs' },
     { t: 'toc', items: [
       ['overview', 'How it works'], ['funding', 'How it is funded'], ['goals', 'What we work on'],
@@ -54,8 +54,8 @@ export default register({
       sub: 'Usually from the Capacity Building budget, under Improved Daily Living.',
       html: `
 <p>Physiotherapy is generally funded as a therapy support within <b>Capacity Building: Improved Daily Living</b>. It can cover eligible assessment, therapy, training and reports. A goal in your plan does not automatically make every treatment an NDIS-funded support. Ordinary treatment for a new injury or recovery from surgery is generally a health-system responsibility. If you are not sure whether your plan includes it, your plan manager or support coordinator can confirm quickly, and we are happy to speak with them directly.</p>
-<h3>Plan managed, self managed or agency managed?</h3>
-<p>For <b>plan-managed</b> funding, we invoice your plan manager for eligible, agreed supports. For <b>self-managed</b> funding, we invoice you. You can claim from an invoice before paying, or pay first and claim from the receipt, subject to the agreed payment terms. Use the my NDIS app or the participant portal used for your plan. <b>Agency-managed appointments: [TBC pending confirmation of NDIS registration].</b> Please check this with us before booking. <a href="https://www.ndis.gov.au/participants/working-providers/paying-supports/how-pay-your-ndis-supports" target="_blank" rel="noopener">The NDIS explains the payment options</a>.</p>
+<h3>Plan-managed and self-managed appointments</h3>
+<p>For <b>plan-managed</b> funding, we invoice your plan manager for eligible, agreed supports. For <b>self-managed</b> funding, we invoice you. You can claim from an invoice before paying, or pay first and claim from the receipt, subject to the agreed payment terms. Use the my NDIS app or the participant portal used for your plan. Check your funding and billing arrangements with us before booking. <a href="https://www.ndis.gov.au/participants/working-providers/paying-supports/how-pay-your-ndis-supports" target="_blank" rel="noopener">The NDIS explains the payment options</a>.</p>
 <h3>Do I need a referral?</h3>
 <p>No referral is needed. What helps most is sharing the relevant goals and funding details from your plan, plus your NDIS number and your plan manager&rsquo;s details. If you have reports from other therapists (occupational therapy, exercise physiology, speech, a specialist) bring those too, so we are adding to the picture rather than duplicating work.</p>`,
     },
@@ -86,7 +86,7 @@ export default register({
       h2: 'Clinic appointments or home visits across the Illawarra',
       html: `
 <p>The setting depends on what you need to practise. At the clinic, we can use equipment for exercise and walking assessments. At home, we can look at your own front steps, lounge or kitchen and practise tasks in the place you do them every day.</p>
-<p>We offer home visits across Dapto and the wider Illawarra, including Wollongong, Shellharbour, Berkeley, Kanahooka, Horsley, Unanderra, Kembla Grange and Albion Park. You can discuss a mix of clinic and home appointments. Visit availability and travel charges need to be agreed before booking. <b>Home-visit travel and report charges: [TBC].</b></p>
+<p>We offer home visits across Dapto and the wider Illawarra, including Wollongong, Shellharbour, Berkeley, Kanahooka, Horsley, Unanderra, Kembla Grange and Albion Park. You can discuss a mix of clinic and home appointments. Visit availability and travel charges need to be agreed before booking.</p>
 <p>Access matters and we would rather sort it out before you arrive than after. Tell us what you need when you book (parking, mobility aids, a support worker attending, a longer appointment, a quieter time of day) and we will set the appointment up around it.</p>`,
       list: [
         'Clinic: 2/20&ndash;30 Princes Highway, inside Dapto Medical Professionals',
@@ -110,7 +110,7 @@ export default register({
         { q: 'How is physiotherapy funded under the NDIS?',
           a: 'Usually through Capacity Building: Improved Daily Living, where your plan includes eligible disability-related therapy. Ordinary treatment for a new injury is generally funded through the health system. Check your plan with your plan manager or support coordinator; with your consent, we can discuss the proposed support with them.' },
         { q: 'Which plan management types do you accept?',
-          a: 'We offer plan-managed and self-managed appointments for eligible supports. Agency-managed appointments: [TBC pending confirmation of NDIS registration]. Tell us how your funding is managed before booking so we can check the billing arrangements.' },
+          a: 'We offer plan-managed and self-managed appointments for eligible supports. Tell us how your funding is managed before booking so we can check the billing arrangements.' },
         { q: 'Do you do NDIS home visits in the Illawarra?',
           a: 'Yes. We visit participants at home across Dapto, Wollongong, Shellharbour, Berkeley, Kanahooka, Horsley, Unanderra, Kembla Grange and Albion Park. Home visits are particularly valuable when the goal involves your own environment: steps, transfers, bathroom or kitchen tasks.' },
         { q: 'Do I need a referral to use my NDIS funding for physiotherapy?',
