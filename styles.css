@@ -370,3 +370,20 @@ details .a{padding:0 40px 24px 0;color:var(--soft);font-size:.97rem;line-height:
 
 /* Preserve the full portrait photograph selected for the homepage. */
 .hero-home .hero-img{aspect-ratio:3537/5306}
+
+/* Homepage service directory: approved option B. */
+.home-service-directory{padding:64px 0;border-bottom:1px solid var(--line)}
+.service-directory-layout{display:grid;grid-template-columns:.9fr 1.6fr;gap:50px;align-items:start}
+.service-directory-heading{padding-top:9px}
+.service-directory-heading h2{font-size:clamp(1.8rem,3vw,2.5rem);line-height:1.15;margin-top:16px;letter-spacing:-.025em}
+.service-directory-heading p{color:var(--soft);font-size:.94rem;line-height:1.7;margin-top:18px;max-width:57ch}
+.service-directory-cta{display:inline-flex;gap:18px;align-items:center;color:var(--accent-deep);font-size:.87rem;font-weight:500;border-bottom:1px solid var(--accent);padding-bottom:5px;margin-top:28px}
+.service-directory-cta:hover{color:var(--ink)}
+.service-directory-links{display:grid;grid-auto-flow:column;grid-template-rows:repeat(var(--directory-rows),1fr);grid-template-columns:repeat(2,minmax(0,1fr));column-gap:24px}
+.service-directory-link{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:.9rem;line-height:1.4;font-weight:500;color:var(--ink);min-height:66px;border-bottom:1px solid var(--line);padding:14px 4px;transition:background .18s,border-color .18s}
+.service-directory-link.column-start{border-top:1px solid var(--line)}
+.service-directory-link:hover{background:var(--tint);border-color:var(--accent)}
+.service-directory-arrow{color:var(--accent-deep);flex:none;font-size:1.15rem;font-weight:400}
+@media(max-width:1000px){.service-directory-layout{grid-template-columns:.85fr 1.6fr;gap:28px}.service-directory-links{column-gap:18px}}
+@media(max-width:820px){.service-directory-layout{grid-template-columns:1fr;gap:30px}.service-directory-heading{max-width:630px}.service-directory-heading h2{font-size:2rem}}
+@media(max-width:520px){.home-service-directory{padding:40px 0}.service-directory-heading h2{font-size:1.75rem}.service-directory-heading p{font-size:.9rem}.service-directory-links{display:block}.service-directory-link{min-height:54px;padding:12px 2px}.service-directory-link.column-start:not(:first-child){border-top:0}}

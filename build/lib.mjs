@@ -371,6 +371,17 @@ ${p.lead ? `  <p class="lead">${p.lead}</p>` : ''}
       b.all ? `<div class="svc-all"><a class="btn btn-line" href="services.html">View all services</a></div>` : ''}`);
   },
 
+  svcdirectory(b) {
+    const rows = Math.ceil(b.items.length / 2);
+    const links = b.items.map((item, i) => {
+      const page = typeof item === 'string' ? registry[item] : null;
+      if (typeof item === 'string' && !page) throw new Error(`svcdirectory: unknown page "${item}"`);
+      const card = page ? { ...page.card, href: url(item) } : item;
+      return `<a class="service-directory-link${i === 0 || i === rows ? ' column-start' : ''}" href="${attr(card.href)}"${card.id ? ` id="${attr(card.id)}"` : ''}><span>${card.name}</span><span class="service-directory-arrow" aria-hidden="true">↗</span></a>`;
+    }).join('');
+    return `<section class="home-service-directory" id="${attr(b.id)}"><div class="wrap service-directory-layout"><div class="service-directory-heading"><span class="eyebrow">${b.eyebrow}</span><h2>${b.h2}</h2><p>${b.sub}</p><a class="service-directory-cta" href="${url('services')}">Explore our services <span aria-hidden="true">→</span></a></div><div class="service-directory-links" style="--directory-rows:${rows}">${links}</div></div></section>`;
+  },
+
   chips(b) {
     return section(b.tone || 'alt',
       `${sh(b)}<div class="suburbs">${b.items.map((s) => `<span>${s}</span>`).join('')}</div>`);

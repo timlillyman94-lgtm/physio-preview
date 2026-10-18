@@ -34,11 +34,10 @@ export default register({
       ],
       cta: 'Book your first visit' },
 
-    { t: 'svcgrid', id: 'services', mid: true, eyebrow: 'What we treat',
+    { t: 'svcdirectory', id: 'services', eyebrow: 'What we treat',
       h2: 'Physiotherapy services in Dapto',
-      sub: 'Individualised physiotherapy for pain, injury, rehabilitation and performance',
-      items: serviceListings,
-      all: true },
+      sub: 'Individualised physiotherapy for pain, injury, rehabilitation and performance.',
+      items: serviceListings },
 
     { t: 'prose', tone: 'alt', id: 'conditions', eyebrow: 'Find your concern',
       h2: 'Conditions we treat',
