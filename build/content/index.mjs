@@ -1,4 +1,5 @@
 import { register } from '../lib.mjs';
+import { serviceListings } from '../service-listings.mjs';
 
 export default register({
   slug: 'index',
@@ -16,7 +17,7 @@ export default register({
     '<b>Your health, our commitment.</b> Evidence-based, one-on-one physiotherapy in Dapto: helping people across the Illawarra recover from injury, manage pain and get moving again.',
 
   blocks: [
-    { t: 'hero', img: 'assets/home-treatment.webp', alt: 'Physiotherapist performing dry needling on a patient’s leg',
+    { t: 'hero', img: 'assets/home-treatment-original.webp', alt: 'Physiotherapist performing dry needling on a patient’s back',
       trust: ['One-on-one, every session', 'Registered physiotherapists', 'HICAPS, WorkCover &amp; NDIS'] },
 
     { t: 'split', id: 'approach', tone: 'fresh', img: 'assets/neck-supine.jpg', alt: 'Physiotherapist treating a patient&rsquo;s neck during a one-on-one appointment',
@@ -36,21 +37,28 @@ export default register({
     { t: 'svcgrid', id: 'services', mid: true, eyebrow: 'What we treat',
       h2: 'Physiotherapy services in Dapto',
       sub: 'Individualised physiotherapy for pain, injury, rehabilitation and performance',
-      items: ['general-physiotherapy', 'sports-injury', 'running-injuries', 'acl-injuries', 'neck-back-pain', 'dry-needling', 'workcover', 'ndis', 'vertigo-headaches'],
+      items: serviceListings,
       all: true },
 
-    { t: 'prose', id: 'more-services', h2: 'More services and conditions',
+    { t: 'prose', tone: 'alt', id: 'conditions', eyebrow: 'Find your concern',
+      h2: 'Conditions we treat',
       html: `
+<span id="more-services"></span>
+<p id="injury-directory">Choose a condition or injury to read about assessment, treatment and rehabilitation.</p>
 <ul>
-<li><a href="services.html#additional-services">Strengthening and conditioning</a>.</li>
-<li><a href="services.html#additional-services">General conditioning and falls prevention</a>.</li>
-<li><a href="services.html#additional-services">Pre- and post-operative rehabilitation</a>.</li>
-<li><a href="services.html#additional-services">Telehealth consultations</a> and <a href="services.html#additional-services">home visits</a>.</li>
-<li><a href="tmj-jaw-pain.html">TMJ and jaw pain</a>.</li>
+<li><a href="neck-back-pain.html">Back and neck pain, including sciatica</a>.</li>
+<li><a href="vertigo-headaches.html">Headaches, dizziness, vertigo, BPPV and balance disorders</a>.</li>
+<li id="additional-conditions"><a href="tmj-jaw-pain.html">TMJ and jaw pain</a>.</li>
 <li><a href="chronic-pain.html">Persistent and chronic pain</a>.</li>
-<li><a href="shoulder-pain.html">Shoulder pain</a>, <a href="knee-pain.html">knee pain</a>, <a href="hip-groin-pain.html">hip and groin pain</a>, and <a href="foot-ankle-pain.html">foot and ankle pain</a>.</li>
-</ul>
-<p>For private health, Medicare and DVA information, see <a href="fees-and-rebates.html">fees and rebates</a>.</p>` },
+<li><a href="shoulder-pain.html">Shoulder pain and injuries</a>.</li>
+<li><a href="knee-pain.html">Knee pain and meniscus injuries</a>.</li>
+<li><a href="hip-groin-pain.html">Hip and groin pain</a>.</li>
+<li><a href="foot-ankle-pain.html">Foot and ankle pain, including ankle sprains and plantar heel pain</a>.</li>
+<li><a href="sports-injury.html">Sports injuries, including muscle strains, ligament sprains and tendon problems</a>.</li>
+<li><a href="acl-injuries.html">ACL injuries and rehabilitation after ACL reconstruction</a>.</li>
+<li><a href="running-injuries.html">Running injuries, including shin splints, runner&rsquo;s knee and Achilles pain</a>.</li>
+<li><a href="workcover.html">Work-related injuries</a>.</li>
+</ul>` },
 
     { t: 'cards', tone: '', eyebrow: 'Getting started', h2: 'Three things people ask before booking',
       items: [

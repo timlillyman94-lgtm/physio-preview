@@ -1,4 +1,5 @@
 import { register } from '../lib.mjs';
+import { serviceListings } from '../service-listings.mjs';
 
 export default register({
   slug: 'services',
@@ -35,17 +36,8 @@ export default register({
     { t: 'crumbs' },
 
     { t: 'svcgrid', id: 'services', h2: 'Services',
-      sub: 'Hands-on treatment, dry needling and staged rehabilitation programs for injury and return to sport.',
-      items: ['general-physiotherapy', 'sports-injury', 'dry-needling', 'acl-injuries', 'running-injuries'] },
-
-    { t: 'cards', id: 'additional-services', h2: 'Exercise, rehabilitation and appointment options',
-      items: [
-        { h3: 'Strengthening &amp; conditioning', p: 'Exercise programs to build strength and endurance for daily activities, rehabilitation or sport.' },
-        { h3: 'General conditioning &amp; falls prevention', p: 'Exercise for strength, balance and mobility, with assessment of difficulties that may increase your risk of falling.' },
-        { h3: 'Pre- and post-operative rehabilitation', p: 'Physiotherapy before and after surgery, with exercises and activity advice matched to your procedure and recovery stage.' },
-        { h3: 'Telehealth consultations', p: 'Physiotherapy appointments by video for advice, exercise guidance and review when a remote appointment is appropriate.', href: 'contact.html', link: 'Ask about telehealth' },
-        { h3: 'Home visits', p: 'Physiotherapy at home for people who have difficulty attending the clinic. Contact us to check availability in your area.', href: 'contact.html', link: 'Arrange a home visit' },
-      ] },
+      sub: 'Individualised physiotherapy for pain, injury, rehabilitation and performance',
+      items: serviceListings },
 
     { t: 'svcgrid', id: 'funding', h2: 'Funding pathways',
       sub: 'How your treatment is paid for. If you are not sure which applies to you, call the clinic and we will work it out before you book.',

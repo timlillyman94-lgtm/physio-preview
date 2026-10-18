@@ -1,0 +1,20 @@
+/* Shared Home/Services catalogue. Condition pages remain in their own directory. */
+export const serviceListings = [
+  'general-physiotherapy', 'sports-injury', 'running-injuries', 'acl-injuries',
+  'neck-back-pain', 'dry-needling', 'workcover', 'ndis', 'vertigo-headaches',
+  { id: 'additional-services', name: 'Strengthening &amp; conditioning',
+    blurb: 'Exercise programs to build strength and endurance for daily activities, rehabilitation or sport.',
+    href: 'contact.html', link: 'Ask about exercise programs' },
+  { name: 'General conditioning &amp; falls prevention',
+    blurb: 'Exercise for strength, balance and mobility, with assessment of difficulties that may increase your risk of falling.',
+    href: 'contact.html', link: 'Ask about falls prevention' },
+  { name: 'Pre- and post-operative rehabilitation',
+    blurb: 'Physiotherapy before and after surgery, with exercises and activity advice matched to your procedure and recovery stage.',
+    href: 'contact.html', link: 'Ask about rehabilitation' },
+  { name: 'Telehealth consultations',
+    blurb: 'Physiotherapy appointments by video for advice, exercise guidance and review when a remote appointment is appropriate.',
+    href: 'contact.html', link: 'Ask about telehealth' },
+  { name: 'Home visits',
+    blurb: 'Physiotherapy at home for people who have difficulty attending the clinic. Contact us to check availability in your area.',
+    href: 'contact.html', link: 'Arrange a home visit' },
+];

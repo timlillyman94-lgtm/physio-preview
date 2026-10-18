@@ -360,11 +360,12 @@ ${p.lead ? `  <p class="lead">${p.lead}</p>` : ''}
   },
 
   svcgrid(b) {
-    const items = b.items.map((slug, i) => {
-      const t = registry[slug];
-      if (!t) throw new Error(`svcgrid: unknown page "${slug}"`);
-      return `<a class="svc" href="${url(slug)}"><span class="no">${String(i + 1).padStart(2, '0')}</span>` +
-        `<h3>${t.card.name}</h3><p>${t.card.blurb}</p><span class="more">Learn more</span></a>`;
+    const items = b.items.map((item, i) => {
+      const page = typeof item === 'string' ? registry[item] : null;
+      if (typeof item === 'string' && !page) throw new Error(`svcgrid: unknown page "${item}"`);
+      const card = page ? { ...page.card, href: url(item) } : item;
+      return `<a class="svc"${card.id ? ` id="${attr(card.id)}"` : ''} href="${attr(card.href)}"><span class="no">${String(i + 1).padStart(2, '0')}</span>` +
+        `<h3>${card.name}</h3><p>${card.blurb}</p><span class="more">${card.link || 'Learn more'}</span></a>`;
     }).join('');
     return section(b.tone || '', `${b.h2 ? sh(b, b.mid) : ''}<div class="svc-grid n${b.items.length}"${b.id ? ` id="${b.id}"` : ''}>${items}</div>${
       b.all ? `<div class="svc-all"><a class="btn btn-line" href="services.html">View all services</a></div>` : ''}`);
